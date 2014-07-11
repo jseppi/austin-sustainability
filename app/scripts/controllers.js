@@ -1,21 +1,4 @@
 'use strict';
-var App;
-App = angular.module('app', ['ngCookies', 'ngResource', 'ngRoute', 'app.controllers', 'app.directives', 'app.filters', 'app.services']);
-App.config([
-  '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider, config) {
-    $routeProvider.when('/todo', {
-      templateUrl: 'partials/todo.html'
-    }).when('/view1', {
-      templateUrl: 'partials/partial1.html'
-    }).when('/view2', {
-      templateUrl: 'partials/partial2.html'
-    }).otherwise({
-      redirectTo: '/todo'
-    });
-    return $locationProvider.html5Mode(false);
-  }
-]);
-'use strict';
 angular.module('app.controllers', []).controller('AppCtrl', [
   '$scope', '$location', '$resource', '$rootScope', function($scope, $location, $resource, $rootScope) {
     $scope.$location = $location;
@@ -76,25 +59,3 @@ angular.module('app.controllers', []).controller('AppCtrl', [
     };
   }
 ]);
-'use strict';
-angular.module('app.directives', ['app.services']).directive('appVersion', [
-  'version', function(version) {
-    return function(scope, elm, attrs) {
-      return elm.text(version);
-    };
-  }
-]);
-'use strict';
-angular.module('app.filters', []).filter('interpolate', [
-  'version', function(version) {
-    return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
-    };
-  }
-]);
-'use strict';
-  angular.module('app.services', []).factory('version', function() {
-  return "0.1";
-});
-
-//# sourceMappingURL=app.js.map
