@@ -22,6 +22,7 @@
   "globals"   : {
     "$"                    : false,
     "angular"              : false,
+    "App"                  : false,
     "marked"               : false,
     "browser"              : false,
     "repeater"             : false,

@@ -1,0 +1,14 @@
+{
+  "name": "marked.min",
+  "_cacheHeaders": {
+    "ETag": "\"a5164c4da98a33dbcae696c10aa951f560b93a1c\"",
+    "Content-Length": "19160",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:a5164c4da",
+  "main": "index.js",
+  "_source": "https://raw.githubusercontent.com/chjj/marked/master/marked.min.js",
+  "_target": "*",
+  "_originalSource": "https://raw.githubusercontent.com/chjj/marked/master/marked.min.js",
+  "_direct": true
+}

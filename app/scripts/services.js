@@ -1,4 +1,5 @@
 'use strict';
-  angular.module('app.services', []).factory('version', function() {
-  return "0.1";
-});
+App
+  .factory('version', function() {
+    return "0.1";
+  });
