@@ -1,11 +1,13 @@
 'use strict';
+// Based on btford/angular-markdown-directive
+// https://github.com/btford/angular-markdown-directive
 
-//requires marked lib and ngSanitize 
+// Requires marked lib and ngSanitize 
 
-//specify markdown content as
-//  as scope variable <div star-markdown="someScopeVar"></div>
-//  as filename <div star-markdown ng-include="'myfile.md'"></div>
-//  or as text content <div star-markdown># Title</div> 
+// Specify markdown content as
+//   as scope variable: <div star-markdown="someScopeVar"></div>
+//   as file: <div star-markdown ng-include="'myfile.md'"></div>
+//   as html node content <div star-markdown># Title</div> 
 App.
   directive('starMarkdown', function ($sanitize) {
     return {

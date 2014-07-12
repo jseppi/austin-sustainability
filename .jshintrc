@@ -21,6 +21,7 @@
   "white"    : false,
   "globals"   : {
     "$"                    : false,
+    "_"                    : false,
     "angular"              : false,
     "App"                  : false,
     "marked"               : false,
