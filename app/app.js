@@ -1,9 +1,11 @@
 'use strict';
+
+
+/* jshint -W079: false */
 var App = angular.module('app', [
-  'ngCookies', 'ngResource', 'ui.router', 
-  'app.controllers', 'app.directives', 'app.filters',
-  'app.services'
+  'ngCookies', 'ngResource', 'ui.router'
 ]);
+
 
 App.config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
