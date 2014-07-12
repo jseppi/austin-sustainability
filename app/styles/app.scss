@@ -1,4 +1,5 @@
 @import "../../node_modules/node-bourbon/assets/stylesheets/bourbon";
 @import "../../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap"; // Boostrap 3
 
-@import "custom.scss";
+@import "includes/base.scss";
+@import "includes/starMainNav.scss";
