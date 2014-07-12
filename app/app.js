@@ -2,7 +2,7 @@
 
 /* jshint -W079: false */
 var App = angular.module('app', [
-  'ngAnimate', 'ngSanitize', 'ui.router'
+  'ngAnimate', 'ngSanitize', 'ngTouch', 'ui.router'
 ]);
 
 
@@ -17,7 +17,11 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     _.each(SECTIONS, function (section) {
       $stateProvider.state(section.slug, {
         url: '/' + section.slug,
-        templateUrl: 'partials/' + section.slug + '.html'
+        templateUrl: 'partials/section.html',
+        data: {
+          //attach section object to state data
+          section: section
+        }
       });
       return;
     });
