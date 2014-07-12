@@ -8,8 +8,8 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    version="1.1"
-   width="1226.025"
-   height="1195.9"
+   width="1290.146"
+   height="1256.1261"
    id="svg2"
    xml:space="preserve"><metadata
      id="metadata8"><rdf:RDF><cc:Work
@@ -28,8 +28,12 @@
        id="clipPath452"><path
          d="m 9.77051,943.948 961.27949,0 0,-937.17749 -961.27949,0 0,937.17749 z"
          id="path454" /></clipPath></defs><g
-     transform="matrix(1.25,0,0,-1.25,0,1195.9)"
-     id="g10"><g
+     transform="matrix(1.25,0,0,-1.25,30.831968,1226.046)"
+     id="g10"><path
+       d="m 533.89288,748.00327 -651.20062,-23.70669 -387.48231,-523.91002 168.01809,-629.59843 596.99743,-261.18636 576.42554,303.90435 121.79345,640.14889 z"
+       transform="matrix(0.67151718,0.02519582,0.02526648,-0.66963953,333.34384,487.93454)"
+       id="path3094"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:71.7011261;stroke-linejoin:round;stroke-miterlimit:11.39999962;stroke-opacity:1;stroke-dasharray:none" /><g
        transform="matrix(0,1,-1,0,965.76951,-15.051)"
        id="g448"
        style="fill:#cccccc"><g

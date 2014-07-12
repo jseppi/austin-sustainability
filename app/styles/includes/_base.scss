@@ -1,18 +1,39 @@
 
+body {
+    font-family: $serif;
+}
+
 .main-header {
   background: #ccc;
 
+  min-height: 4em;
+
   h1 {
-    font-size: 20px;
+    font-size: 1.5em;
+    font-family: $sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
     text-transform: uppercase;
     color: white;
     margin: 0;
   }
 
   h2 {
-    font-size: 16px;
+    font-family: $serif;
+    font-size: 1.2em;
+    word-spacing: 1px;
     color: white;
     margin: 0;
+  }
+
+  .head-text {
+    padding: 40px 0 10px 0;
+  }
+
+  .star-icon {
+      float: left;
+      margin: 25px 20px 0 50px;
+      height: 80px;
   }
 }
 
