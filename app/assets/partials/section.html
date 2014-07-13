@@ -1,4 +1,13 @@
 <div ng-controller="SectionCtrl"> 
-  <h1>{{section.display}}</h1>
-  <a ui-sref="start">back to start</a>
+  <div class="col-xs-3 section-about">
+    <a ui-sref="start">back to start</a>
+    <h1>{{section.display}}</h1>
+    <p>{{section.lead}}</p>
+    <div star-section-nav></div>
+    
+  </div>
+  <div class="col-xs-9 section-content">
+    <p>selected subsection content goes here</p>
+  </div>
+  
 </div>
