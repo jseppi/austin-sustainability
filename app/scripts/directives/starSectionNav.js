@@ -12,7 +12,7 @@ App.directive('starSectionNav', function ($state) {
               '</ul>' +
               '</div>',
     link: function (scope) {
-      console.log("in section nav", $state.current.data.name);
+      console.log("in section nav", $state.current.data.section);
       return;
     }
   };
