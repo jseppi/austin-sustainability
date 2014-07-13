@@ -1,4 +1,5 @@
 App
+  .constant('CONTENT_PATH', '/content/')
   .constant('SECTIONS', [
     {
       display: 'Climate and Energy',

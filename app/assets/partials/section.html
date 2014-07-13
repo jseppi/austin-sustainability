@@ -3,11 +3,15 @@
     <a ui-sref="start">back to start</a>
     <h1>{{section.display}}</h1>
     <p>{{section.lead}}</p>
-    <div star-section-nav></div>
+    <ul>
+      <li ng-repeat="ss in subsections">
+        subsection
+      </li>
+    </ul>
     
   </div>
   <div class="col-xs-9 section-content">
-    <p>selected subsection content goes here</p>
+    
   </div>
   
 </div>
