@@ -1,37 +1,20 @@
 'use strict';
 
 
-function parseSectionsOrig (text) {
-  var sections = [], section;
-  function add () {
-    if(section) {
-      sections.push(section.join('\n'));   
-    }
-  }
-  _.each(text.split('\n'), function (line) {
-    if(/^\s*#/.test(line)) { // new section
-      add();
-      section = [];
-    }
-    (section = section || []).push(line);
-  });
-
-  //add the last section
-  add();
-
-  return sections;
-}
-
 function parseSections (text) {
   var sections = [];
-
   var lines = text.split('\n');
+  var headingRegex = /^\s*(#+)\s(.*)/;
 
   _.each(lines, function (line) {
-    if (/^\s*#/.test(line)) { //new section
-      sections.push({
-        line: line
-      });
+    if (angular.isString(line)) {
+      var match = line.match(headingRegex);
+      if (match) {
+        sections.push({
+          level: match[1].length,
+          heading: match[2]
+        });
+      }
     }
   });
 
@@ -47,9 +30,7 @@ App
   
     $http.get(contentFilePath, {cache: $templateCache})
       .success(function (response) {
-        console.log(response);
         console.log(parseSections(response));
-        
       });
   });
 
