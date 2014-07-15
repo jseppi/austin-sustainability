@@ -22,7 +22,8 @@
     "angular-mocks": "~1.2.19",
     "components-underscore": "~1.5.2",
     "animate.css": "~3.2.0",
-    "marked.min": "https://raw.githubusercontent.com/chjj/marked/master/marked.min.js"
+    "marked.min": "https://raw.githubusercontent.com/chjj/marked/master/marked.min.js",
+    "js-yaml": "~3.1.0"
   },
   "overrides": {
     "angular-mocks": {
