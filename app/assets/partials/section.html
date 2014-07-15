@@ -2,16 +2,28 @@
   <div class="col-xs-3 section-about">
     <a ui-sref="start">back to start</a>
     <h1>{{section.display}}</h1>
-    <p>{{section.lead}}</p>
+    <p>{{sectionLead}}</p>
     <ul>
       <li ng-repeat="ss in subsections">
-        subsection
+        <a href="" ng-click="selectSubsection(ss)">{{ss.title}}</a>
       </li>
     </ul>
     
   </div>
   <div class="col-xs-9 section-content">
-    
+    <div class="subsection" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
+      <h1>{{ss.title}}</h1>
+      <div class="row">
+        <div class="col-xs-7">
+          <div class="subsection-content" star-markdown="ss.content"></div>
+        </div>
+        <div class="col-xs-5">
+          <div class="subsection-graphic">
+            <img ng-src="{{ss.graphic}}"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   
 </div>

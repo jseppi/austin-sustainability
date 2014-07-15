@@ -25,6 +25,7 @@
     "angular"              : false,
     "App"                  : false,
     "marked"               : false,
+    "jsyaml"               : false,
     "browser"              : false,
     "repeater"             : false,
     "element"              : false,
