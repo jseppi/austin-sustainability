@@ -4,8 +4,10 @@
     <h1>{{section.display}}</h1>
     <p>{{sectionLead}}</p>
     <ul>
-      <li ng-repeat="ss in subsections">
-        <a href="" ng-click="selectSubsection(ss)">{{ss.title}}</a>
+      <li ng-repeat="ss in subsections" ng-class="{'active': selectedSubsection == ss}">
+        <a href="" ng-click="selectSubsection(ss)">
+          {{ss.title}}
+        </a>
       </li>
     </ul>
     
