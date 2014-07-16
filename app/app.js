@@ -10,17 +10,26 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
   $stateProvider
     .state('start', {
       url: '/',
-      templateUrl: 'partials/start.html'
+      templateUrl: 'partials/home.html',
+      controller: 'HomeCtrl',
+      resolve: {
+        sections: function (SectionService) {
+          return SectionService.load();
+        }
+      }
     });
+
 
     //Create state for each main section based on slugs
     _.each(SECTIONS, function (section) {
-      $stateProvider.state(section.slug, {
-        url: '/' + section.slug,
+      $stateProvider.state(section, {
+        url: '/' + section,
         templateUrl: 'partials/section.html',
-        data: {
-          //attach section object to state data
-          section: section
+        controller: 'SectionCtrl',
+        resolve: {
+          sections: function (SectionService) {
+            return SectionService.load();
+          }
         }
       });
       return;
