@@ -1,21 +1,16 @@
 'use strict';
 
-App.controller('SectionCtrl', function ($scope, $http, $templateCache, $state, CONTENT_PATH) {
-  $scope.section = $state.current.data.section; 
-
-  //Path to content file for the currently selected section
-  var contentFilePath = CONTENT_PATH + $scope.section.slug + ".yml";
+App.controller('SectionCtrl', function ($scope, $state, sections) {
   
-  $http.get(contentFilePath, {cache: $templateCache})
-    .success(function (response) {
-      var sectionContent = jsyaml.load(response);
+  var currentSection = _.find(sections, function (s) {
+    return s.key === $state.current.name; }
+  );
 
-      $scope.sectionLead = sectionContent.lead;
-      $scope.subsections = sectionContent.subsections;
+  $scope.sectionLead = currentSection.config.lead;
+  $scope.subsections = currentSection.config.subsections;
 
-      //default to selecting the first subsection 
-      $scope.selectedSubsection = _.first($scope.subsections);
-    });
+  //default to selecting the first subsection 
+  $scope.selectedSubsection = _.first($scope.subsections);
 
 
   $scope.selectSubsection = function (ss) {
