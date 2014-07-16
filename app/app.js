@@ -10,7 +10,13 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
   $stateProvider
     .state('start', {
       url: '/',
-      templateUrl: 'partials/start.html'
+      templateUrl: 'partials/home.html',
+      controller: 'HomeCtrl',
+      resolve: {
+        sections: function (SectionService) {
+          return SectionService.load();
+        }
+      }
     });
 
 
@@ -18,22 +24,17 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     _.each(SECTIONS, function (section) {
       $stateProvider.state(section, {
         url: '/' + section,
-        templateUrl: 'partials/section.html'
+        templateUrl: 'partials/section.html',
+        controller: 'SectionCtrl',
+        resolve: {
+          sections: function (SectionService) {
+            return SectionService.load();
+          }
+        }
       });
       return;
     });
     
     $urlRouterProvider.otherwise('/');
     return;
-});
-
-App.run(function ($http, $templateCache, CONTENT_PATH, SECTIONS) {
-  //Preload the templateCache with each of the section configs 
-  _.each(SECTIONS, function (section) {
-    var path = CONTENT_PATH + section + ".yml";
-    $http.get(path)
-      .success(function (sectionConfig) {
-        $templateCache.put(path, sectionConfig);
-      });
-  });
 });

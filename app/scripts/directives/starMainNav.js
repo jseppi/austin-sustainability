@@ -1,19 +1,22 @@
 'use strict';
 
-App.directive('starMainNav', function (SECTIONS) {
+App.directive('starMainNav', function () {
   return {
     restrict: 'A',
+    scope: {
+      sections: '=starMainNav'
+    },
     template: '<div class="star-main-nav">' +
               '<ul>' +
                 '<li ng-repeat="section in sections">' +
                   '<h3 class="section-title">' +
                     '<a href="" ng-click="showSection(section)">' +
-                      '{{section}}' +
+                      '{{section.config.title}}' +
                     '</a>' +
                   '</h3>' +
                   '<div ng-class="{\'selected\': selectedSection == section}" class="section-description">' +
-                    '<p>{{section}}</p>' +
-                    '<a class="btn btn-default" ui-sref="{{section}}">' +
+                    '<p>{{section.config.description}}</p>' +
+                    '<a class="btn btn-default" ui-sref="{{section.key}}">' +
                       'Explore' +
                     '</a>' +
                   '</div>' +
@@ -21,9 +24,9 @@ App.directive('starMainNav', function (SECTIONS) {
               '</ul>' +
               '</div>',
     link: function (scope) {
-      scope.sections = SECTIONS;
-      scope.selectedSection = null;
 
+      scope.selectedSection = null;
+      
       scope.showSection = function (section) {
         if (scope.selectedSection === section) {
           scope.selectedSection = null;
@@ -36,5 +39,4 @@ App.directive('starMainNav', function (SECTIONS) {
       return;
     }
   };
-
 });
