@@ -8,12 +8,12 @@ App.directive('starMainNav', function (SECTIONS) {
                 '<li ng-repeat="section in sections">' +
                   '<h3 class="section-title">' +
                     '<a href="" ng-click="showSection(section)">' +
-                      '{{section.display}}' +
+                      '{{section}}' +
                     '</a>' +
                   '</h3>' +
                   '<div ng-class="{\'selected\': selectedSection == section}" class="section-description">' +
-                    '<p>{{section.description}}</p>' +
-                    '<a class="btn btn-default" ui-sref="{{section.slug}}">' +
+                    '<p>{{section}}</p>' +
+                    '<a class="btn btn-default" ui-sref="{{section}}">' +
                       'Explore' +
                     '</a>' +
                   '</div>' +

@@ -13,19 +13,27 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
       templateUrl: 'partials/start.html'
     });
 
+
     //Create state for each main section based on slugs
     _.each(SECTIONS, function (section) {
-      $stateProvider.state(section.slug, {
-        url: '/' + section.slug,
-        templateUrl: 'partials/section.html',
-        data: {
-          //attach section object to state data
-          section: section
-        }
+      $stateProvider.state(section, {
+        url: '/' + section,
+        templateUrl: 'partials/section.html'
       });
       return;
     });
     
     $urlRouterProvider.otherwise('/');
     return;
+});
+
+App.run(function ($http, $templateCache, CONTENT_PATH, SECTIONS) {
+  //Preload the templateCache with each of the section configs 
+  _.each(SECTIONS, function (section) {
+    var path = CONTENT_PATH + section + ".yml";
+    $http.get(path)
+      .success(function (sectionConfig) {
+        $templateCache.put(path, sectionConfig);
+      });
+  });
 });
