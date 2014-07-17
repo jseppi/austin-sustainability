@@ -2,7 +2,7 @@
 // Based on btford/angular-markdown-directive
 // https://github.com/btford/angular-markdown-directive
 
-// Requires marked lib and ngSanitize 
+// Requires marked and ngSanitize 
 
 // Specify markdown content as
 //   as scope variable: <div star-markdown="someScopeVar"></div>
