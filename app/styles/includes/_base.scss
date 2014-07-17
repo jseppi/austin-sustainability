@@ -1,10 +1,19 @@
 
 body {
-    font-family: $serif;
+  font-family: $serif;
+  overflow: hidden;  
+}
+
+.ng-hide {
+  /* this is just another form of hiding an element */
+  display:block!important;
+  position:absolute;
+  top:-9999px;
+  left:-9999px;
 }
 
 .main-header {
-  background: #ccc;
+  background: $gray;
 
   min-height: 4em;
 
@@ -38,9 +47,11 @@ body {
 }
 
 .main-about {
-
+  h1 {
+    font-family: $sans-serif;
+  }
 }
 
 .main-content {
-  border-left: 2px solid #000;
+  border-left: 2px solid $gray;
 }

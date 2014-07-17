@@ -8,8 +8,10 @@
 
     > li {
       padding: 10px 10px;
-      background: #ccc;
+      background: $gray;
       margin: 4px;
+      font-family: $sans-serif;
+      color: white;
     }
   }
 
