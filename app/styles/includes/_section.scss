@@ -1,8 +1,9 @@
 .section-about {
-  
+  border-right: 1px solid lighten($gray, 10%);
 }
 
 .section-nav {
+
   ul {
 
     padding: 0;
@@ -37,9 +38,18 @@
 }
 
 .section-content {
-  border-left: 1px solid lighten($gray, 10%);
+  
 }
 
 .subsection-description {
   margin-top: 2em;
+}
+
+.subsection-star-container {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.subsection-star {
+  width: 120px;
 }

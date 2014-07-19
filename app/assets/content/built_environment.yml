@@ -4,6 +4,7 @@ lead: A sustainable built environment is characterized by
 subsections:
   - title: Ambient Noise & Light
     description: Minimize and manage ambient noise and light levels to protect public health and integrity of ecological systems.
+    star: content/stars/built_environment/identity_05-07_built-environment-2-01.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Ambient Noise & Light"
