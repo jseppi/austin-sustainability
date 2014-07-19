@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5 {
 
 .main-header {
   background: $gray;
+  @include transition(all 1.0s ease-in-out);
 
   min-height: 4em;
 
