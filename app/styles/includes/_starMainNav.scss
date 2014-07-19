@@ -17,6 +17,7 @@
     font-size: 16px;
     margin: 0;
     font-family: $sans-serif;
+    @include transition(all 1.0s ease-in-out);
 
     a {
       text-decoration: none;
@@ -30,7 +31,6 @@
     max-height: 0;
     overflow: hidden;
     @include transition(all 0.5s ease-out);
-
     padding: 0 25px 0 25px;
 
     p {
@@ -48,7 +48,10 @@
     @each $color-set in $color-sets {
       &.#{nth($color-set, 1)} {
         .section-title {
-          background-color: #{nth(nth($color-set, 2), 1)};
+          background-color: #{nth(nth($color-set, 3), 5)};
+        }
+        .section-description {
+          background-color: #{nth(nth($color-set, 3), 4)};
         }
       }
     }
