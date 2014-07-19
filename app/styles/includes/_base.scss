@@ -7,7 +7,6 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: $sans-serif;
   font-weight: 400;
-  font-size: 2.3em;
 }
 
 .ng-hide {
@@ -69,11 +68,21 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+@media (min-width: $screen-xs-min) {
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content {
+    padding-left: 35px;
+  }
+}
 
 @media (min-width: $screen-md-min) {
   .about {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .content {
@@ -83,8 +92,8 @@ h1, h2, h3, h4, h5 {
 
 @media (min-width: $screen-lg-min) {
   .about {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .content {

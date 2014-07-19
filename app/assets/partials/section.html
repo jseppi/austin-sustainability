@@ -5,20 +5,26 @@
   <div class="row">
     <p>{{section.lead}}</p>
   </div>
-  <nav class="section-nav" role="navigation">
-    <ul>
-      <li ng-repeat="ss in subsections" ng-class="{'active': selectedSubsection == ss}">
-        <a href="" ng-click="selectSubsection(ss)">
-          {{ss.title}}
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div class="subsection-description">
-    <p>{{selectedSubsection.description}}</p>
+  <div class="row">
+    <nav class="section-nav" role="navigation">
+      <ul>
+        <li ng-repeat="ss in subsections" ng-class="{'active': selectedSubsection == ss}">
+          <a href="" ng-click="selectSubsection(ss)">
+            {{ss.title}}
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <div class="subsection-star-container">
-    <img ng-src="{{selectedSubsection.star}}" alt="{{selectedSubsection.title}}" class="subsection-star"/>
+  <div class="row">
+    <div class="subsection-description">
+      <p>{{selectedSubsection.description}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="subsection-star-container">
+      <img ng-src="{{selectedSubsection.star}}" alt="{{selectedSubsection.title}}" class="subsection-star"/>
+    </div>
   </div>
 </div>
 <div class="col-xs-9 section-content content">
