@@ -49,10 +49,10 @@
     @each $color-set in $color-sets {
       &.#{nth($color-set, 1)} {
         .section-title {
-          background-color: #{nth(nth($color-set, 3), 5)};
+          background-color: #{nth(nth($color-set, 4), 1)};
         }
         .section-description {
-          background-color: #{nth(nth($color-set, 3), 4)};
+          background-color: #{nth(nth($color-set, 4), 2)};
         }
       }
     }
