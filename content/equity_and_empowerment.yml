@@ -1,0 +1,46 @@
+title: Equity and Empowerment
+description: A sustainable community works toward equity and inclusion for all residents.
+lead: A community that is equitable and empowering features
+subsections:
+  - title: Civic Engagement
+    description: Citizens and residents improve community well-being by participating in local decision-making and volunteering with community organizations.
+    star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-01.png
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Civic Engagement"
+
+  - title: Civil & Human Rights
+    description: Promote the full enjoyment of civil and human rights for all residents in the community.
+    star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-02.png
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Civil & Human Rights"
+
+  - title: Environmental Justice
+    description: Reduce polluted and toxic environments with an emphasis on alleviating disproportionate health hazards in areas where low-income residents and persons of color live.
+    star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-03.png
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Environmental Justice"
+
+  - title: Equitable Services & Access
+    description: Ensure equitable access to foundational community assets with and between neighborhoods and populations.
+    star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-04.png
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Equitable Services & Access"
+
+  - title: Human Services
+    description: Ensure high quality human services programs are available and utilized to guarantee basic human needs so that all residents lead lives of dignity.
+    star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-05.png
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Human Services"
+
+  - title: Poverty Prevention & Alleviation
+    description: Prevent people from falling into poverty and proactively enable those who are living in poverty to obtain greater lasting economic stability and security.
+    star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-06.png
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Poverty Prevention & Alleviation"
+

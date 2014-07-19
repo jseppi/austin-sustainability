@@ -1,0 +1,45 @@
+title: Climate and Energy
+description: A sustainable community includes the impacts caused by climate change and increases energy efficiency.
+lead: Sustainable energy and climate change solutions are characterized by
+subsections:
+  - title: Climate Adaptation
+    description: Strengthen the resilience of communities to climate change impacts on built, natural, economic, and social systems.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Climate Adaptation"
+
+  - title: Greenhouse Gas Mitigation
+    description: Achieve greenhouse gas emissions reductions throughout the community.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Greenhouse Gas Mitigation"
+
+  - title: Greening the Energy Supply
+    description: Transition the local energy supply for both transportation and non-mobile sources toward the use of renewable, less carbon intensive, and less toxic alternatives.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Greening the Energy Supply"
+
+  - title: Industrial Sector Resource Efficiency
+    description: Minimize resource use and demand in the industrial sector as a means to mitigate greenhouse gas emissions and conserve water.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Industrial Sector Resource Efficiency"
+
+  - title: Resource Efficient Building
+    description: Improve the energy and water efficiency of the community's residential, commercial, and institutional building stock.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Resource Efficient Building"
+
+  - title: Resource Efficient Public Infrastructure
+    description: Minimize resource use and demand in local public infrastructure as a means to mitigate greenhouse gas emissions and conserve water.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Resource Efficient Public Infrastructure"
+
+  - title: Waste Minimization
+    description: Reduce and reuse material waste produced in the community.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Waste Minimization"

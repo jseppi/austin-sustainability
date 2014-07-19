@@ -1,0 +1,57 @@
+title: Built Environment
+description: A sustainable community provides quality, choice, and access in the built environment, where people live, work, and play.
+lead: A sustainable built environment is characterized by
+subsections:
+  - title: Ambient Noise & Light
+    description: Minimize and manage ambient noise and light levels to protect public health and integrity of ecological systems.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Ambient Noise & Light"
+
+  - title: Community Water Systems
+    description: Provide a clean and secure water supply for all local users through the management of potable water, wastewater, stormwater, and other piped infrastructure.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Community Water Systems"
+
+  - title: Compact & Complete Communities
+    description: Concentrate development in compact, human-scaled, walkable centers and neighborhoods that connect to transit, offer diverse uses and services, and provide housing options for families of all income.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Compact & Complete Communities"
+
+  - title: Housing Affordability
+    description: Construct, preserve, and maintain an adequate and diverse supply of location-efficient and affordable housing options for all residents.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Housing Affordability"
+
+  - title: Infill & Redevelopment
+    description: Focus new growth in infill areas and on development that does not require the extension of water, sewer, and road infrastructure or facilitate sprawl.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Infill & Redevelopment"
+
+  - title: Public Spaces
+    description: Create a network of well-used and enjoyable parks and public spaces that feature equitable, convenient access for residents throughout the community.
+    graphic: http://placehold.it/350x350
+    content: |
+            ### Park Access
+
+            Austin was asked to demonstrate how our public spaces are sustainable in 14 areas. One of these areas pertains to access to parks and public spaces.
+
+            ### Sustainability Benchmark
+
+            Demonstrate that at least 70% of Austinites live within 1/3 mile walk of a park or public space, and that 90% live within 3 miles of an off-road trail.
+
+            ### How Austin's Doing
+
+            77% live within 1/3 mile walk of a park or public space.
+
+            Austin excels in planning and design so that parks, public spaces, and off-road trails are highly accessible to a large majority of residents.
+
+  - title: Transportation Choices
+    description: Promote diverse transportation modes, including walking, bicycling, and transit, that are safe, low-cost, and reduce vehicle miles traveled.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Transportation Choices"
