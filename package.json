@@ -12,7 +12,7 @@
     "compiler": "brunch build -P",
     "dev": "brunch watch --server",
     "test": "karma start test/karma.conf.js",
-    "app": "nodewebkit _public",
+    "app": "brunch build -P && nodewebkit _public",
     "deploy": "grunt"
   },
   "dependencies": {

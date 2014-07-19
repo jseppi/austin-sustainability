@@ -1,26 +1,40 @@
 title: Natural Systems
 description: A sustainable community protects and restores the resources upon which life depends.
-lead: TODO
+lead: Natural resources that must be protected and restored include
 subsections:
-  - title: Subsection 1
+  - title: Green Infrastructure
+    description: Design and maintain a network of green infrastructure features that integrate with the built environment to conserve ecosystem functions and provide associated benefits to human populations.
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Green Infrastructure"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Invasive Species
+    description: Prevent and manage invasive species in order to restore and protect natural ecosystems and the benefits they provide.
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Invasive Species"
 
-            [a link](http://google.com)
+  - title: Natural Resource Protection
+    description: Protect, enhance, and restore natural ecosystems and cultural landscapes to confer resilience and support clean water and air, food supply, and public safety.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Natural Resource Protection"
+
+  - title: Outdoor Air Quality
+    description: Ensure that outdoor air quality is healthy for all people and protects the welfare of the community.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Outdoor Air Quality"
+
+  - title: Water in the Environment
+    description: Protect and restore the biological, chemical, and hydrological integrity of water in the natural environment.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Water in the Environment"
+
+  - title: Working Lands
+    description: Conserve and maintain lands that provide raw materials in ways that allow for sustained harvests and preserve ecosystem integrity.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Working Lands"
 

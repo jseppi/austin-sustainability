@@ -1,26 +1,41 @@
 title: Economy and Jobs
 description: A sustainable community provides access to quality jobs and shared prosperity for all.
-lead: TODO
+lead: A sustainable economy is characterized by measures that support
 subsections:
-  - title: Subsection 1
+  - title: Business Retention & Redevelopment
+    description: Foster economic prosperity and stability by retaining and expanding businesses with support from the business community.
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Business Retention & Redevelopment"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Green Market Development
+    description: Increase overall market demand for products and services that protect the environment.
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Green Market Development"
 
-            [a link](http://google.com)
+  - title: Local Economy
+    description: Create an increasingly self-reliant community through a robust local economy with benefits shared by all.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Local Economy"
+
+  - title: Quality Jobs & Living Wages
+    description: Expand job opportunities that support upward economic mobility and provide sufficient wages so that working people and their families can afford a decent standard of living.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Quality Jobs & Living Wages"
+
+  - title: Targeted Industry Development
+    description: Increase local competitiveness by strengthening networks of businesses, suppliers, and associated institutions.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Targeted Industry Development"
+
+  - title: Workforce Readiness
+    description: Prepare the workforce for successful employment through increasing attainment of post-secondary education and improving outcomes of workforce development programs.
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Workforce Readiness"
+
 
