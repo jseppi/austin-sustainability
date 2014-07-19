@@ -10,13 +10,13 @@
       padding: 10px 10px;
       background: $gray;
       margin: 4px;
-      font-family: $sans-serif;
       color: white;
     }
   }
 
   .section-title {
     font-size: 16px;
+    font-family: $sans-serif;
 
     a {
       text-decoration: none;
@@ -27,7 +27,7 @@
   .section-description {
     max-height: 0;
     overflow: hidden;
-    @include transition(all 0.5s ease-in);
+    @include transition(all 0.5s ease-out);
 
     &.selected {
       max-height: 300px;
