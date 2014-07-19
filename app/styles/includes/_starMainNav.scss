@@ -34,4 +34,17 @@
       @include transition(all 1.0s ease-in-out);
     }
   }
+
+  .btn-explore {
+    @extend .btn-default;
+    text-transform: uppercase;
+    font-family: $sans-serif;
+    background: darken($gray, 10%);
+    color: white;
+    border-color: darken($gray, 20%);
+
+    &:hover {
+      border-color: darken($gray, 20%);
+    }
+  }
 }

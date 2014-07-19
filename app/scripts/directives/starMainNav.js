@@ -17,9 +17,11 @@ App.directive('starMainNav', function () {
             '</h3>' +
             '<div ng-class="{\'selected\': selectedSection == section}" class="section-description">' +
               '<p>{{section.config.description}}</p>' +
-              '<a class="btn btn-default" ui-sref="{{section.key}}">' +
-                'Explore' +
-              '</a>' +
+              '<p class="text-center">' +
+                '<a class="btn btn btn-explore" ui-sref="{{section.key}}">' +
+                  'Explore' +
+                '</a>' +
+              '</p>' +
             '</div>' +
           '</li>' +
         '</ul>' +
