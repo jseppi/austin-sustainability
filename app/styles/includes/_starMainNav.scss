@@ -7,7 +7,6 @@
     list-style: none;
 
     > li {
-      padding: 10px 10px;
       background: $gray;
       margin: 4px;
       color: white;
@@ -18,10 +17,13 @@
     font-size: 16px;
     margin: 0;
     font-family: $sans-serif;
+    @include transition(all 1.0s ease-in-out);
 
     a {
       text-decoration: none;
       color: inherit;
+      display: block;
+      padding: 1em;
     }
   }
 
@@ -29,10 +31,30 @@
     max-height: 0;
     overflow: hidden;
     @include transition(all 0.5s ease-out);
+    padding: 0 25px 0 25px;
+    font-size: 1.1em;
 
-    &.selected {
+    p {
+      hyphens: auto;
+      margin-top: 5px;
+    }
+  }
+  .selected {
+    .section-description {
       max-height: 300px;
       @include transition(all 1.0s ease-in-out);
+
+    }
+
+    @each $color-set in $color-sets {
+      &.#{nth($color-set, 1)} {
+        .section-title {
+          background-color: #{nth(nth($color-set, 3), 5)};
+        }
+        .section-description {
+          background-color: #{nth(nth($color-set, 3), 4)};
+        }
+      }
     }
   }
 
