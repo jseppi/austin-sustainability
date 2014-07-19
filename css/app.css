@@ -5289,7 +5289,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #3073a9;
-    border-color: #28618e; }
+    border-color: #28608e; }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
@@ -5306,7 +5306,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: #fff;
     background-color: #469d44;
-    border-color: #3c8439; }
+    border-color: #3b8439; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
@@ -5323,7 +5323,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
     color: #fff;
     background-color: #31b2d5;
-    border-color: #269ebc; }
+    border-color: #269cbc; }
   .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
     background-image: none; }
   .btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
@@ -5357,7 +5357,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     color: #fff;
     background-color: #c92e2c;
-    border-color: #ac2725; }
+    border-color: #ac2525; }
   .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     background-image: none; }
   .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
@@ -6498,19 +6498,19 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 
 .alert-success {
   background-color: #dff0d8;
-  border-color: #d6e9c6;
+  border-color: #d7e9c6;
   color: #3c763d; }
   .alert-success hr {
-    border-top-color: #c9e2b3; }
+    border-top-color: #cae2b3; }
   .alert-success .alert-link {
     color: #2b542b; }
 
 .alert-info {
   background-color: #d9edf7;
-  border-color: #bceaf1;
+  border-color: #bce9f1;
   color: #31708f; }
   .alert-info hr {
-    border-top-color: #a6e3ec; }
+    border-top-color: #a6e2ec; }
   .alert-info .alert-link {
     color: #245369; }
 
@@ -6519,7 +6519,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-color: #faeacc;
   color: #8a6d3b; }
   .alert-warning hr {
-    border-top-color: #f7e1b5; }
+    border-top-color: #f7e0b5; }
   .alert-warning .alert-link {
     color: #66502c; }
 
@@ -6528,7 +6528,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-color: #ebccd1;
   color: #a94442; }
   .alert-danger hr {
-    border-top-color: #e4b9c1; }
+    border-top-color: #e4b9c0; }
   .alert-danger .alert-link {
     color: #843534; }
 
@@ -6886,26 +6886,26 @@ a.list-group-item-danger {
     border-bottom-color: #428bca; }
 
 .panel-success {
-  border-color: #d6e9c6; }
+  border-color: #d7e9c6; }
   .panel-success > .panel-heading {
     color: #3c763d;
     background-color: #dff0d8;
-    border-color: #d6e9c6; }
+    border-color: #d7e9c6; }
     .panel-success > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #d6e9c6; }
+      border-top-color: #d7e9c6; }
   .panel-success > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #d6e9c6; }
+    border-bottom-color: #d7e9c6; }
 
 .panel-info {
-  border-color: #bceaf1; }
+  border-color: #bce9f1; }
   .panel-info > .panel-heading {
     color: #31708f;
     background-color: #d9edf7;
-    border-color: #bceaf1; }
+    border-color: #bce9f1; }
     .panel-info > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #bceaf1; }
+      border-top-color: #bce9f1; }
   .panel-info > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #bceaf1; }
+    border-bottom-color: #bce9f1; }
 
 .panel-warning {
   border-color: #faeacc; }
@@ -7730,6 +7730,9 @@ h1, h2, h3, h4, h5 {
 
 .main-header {
   background: #7f7f7f;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   min-height: 4em; }
   .main-header h1 {
     font-size: 1.1em;
@@ -7756,21 +7759,48 @@ h1, h2, h3, h4, h5 {
 .main-content {
   border-left: 2px solid #7f7f7f; }
 
+.about h2, .about h3, .content h2, .content h3 {
+  font-size: 2.3em;
+  min-height: 2.3em;
+  margin-top: 1em; }
+
+@media (min-width: 480px) {
+  .about {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .content {
+    padding-left: 35px; } }
+
+@media (min-width: 992px) {
+  .about {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .content {
+    padding-left: 45px; } }
+
+@media (min-width: 1200px) {
+  .about {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .content {
+    padding-left: 60px; } }
+
 .star-main-nav ul {
   padding: 0;
   margin: 0;
   list-style: none; }
   .star-main-nav ul > li {
     background: #7f7f7f;
-    margin: 4px;
-    color: white; }
+    color: white;
+    margin-bottom: 2px; }
 .star-main-nav .section-title {
   font-size: 16px;
   margin: 0;
   font-family: 'Noto Sans';
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  border-bottom: 1px solid #ccc; }
   .star-main-nav .section-title a {
     text-decoration: none;
     color: inherit;
@@ -7793,33 +7823,33 @@ h1, h2, h3, h4, h5 {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 .star-main-nav .selected.climate_and_energy .section-title {
-  background-color: #F75B5D; }
+  background-color: #BB6E6E; }
 .star-main-nav .selected.climate_and_energy .section-description {
-  background-color: #C55052; }
+  background-color: #D26666; }
 .star-main-nav .selected.natural_systems .section-title {
-  background-color: #F3A863; }
+  background-color: #BA9470; }
 .star-main-nav .selected.natural_systems .section-description {
-  background-color: #C38C56; }
+  background-color: #D19C6A; }
 .star-main-nav .selected.equity_and_empowerment .section-title {
-  background-color: #F2E168; }
+  background-color: #BAB074; }
 .star-main-nav .selected.equity_and_empowerment .section-description {
-  background-color: #C1B65B; }
+  background-color: #D0C56E; }
 .star-main-nav .selected.health_and_safety .section-title {
-  background-color: #64DDA7; }
+  background-color: #72AE92; }
 .star-main-nav .selected.health_and_safety .section-description {
-  background-color: #58B28B; }
+  background-color: #779E8A; }
 .star-main-nav .selected.arts_education_and_culture .section-title {
-  background-color: #6CB6DC; }
+  background-color: #7A929D; }
 .star-main-nav .selected.arts_education_and_culture .section-description {
-  background-color: #5E94B1; }
+  background-color: #72A7C2; }
 .star-main-nav .selected.economy_and_jobs .section-title {
-  background-color: #7B6AE2; }
+  background-color: #7F7A9E; }
 .star-main-nav .selected.economy_and_jobs .section-description {
-  background-color: #695CB5; }
+  background-color: #7A6DC3; }
 .star-main-nav .selected.built_environment .section-title {
-  background-color: #DC6BAD; }
+  background-color: #9E7A92; }
 .star-main-nav .selected.built_environment .section-description {
-  background-color: #B15E8E; }
+  background-color: #C270A0; }
 .star-main-nav .btn-explore {
   text-transform: uppercase;
   font-family: 'Noto Sans';
@@ -7839,7 +7869,6 @@ h1, h2, h3, h4, h5 {
   .section-nav ul > li {
     padding: 4px 4px 4px 16px;
     background: white;
-    color: #7f7f7f;
     border-left: 1px solid #7f7f7f;
     border-right: 1px solid #7f7f7f;
     border-bottom: 1px solid #7f7f7f;
@@ -7857,14 +7886,48 @@ h1, h2, h3, h4, h5 {
 
 .subsection-description {
   margin-top: 2em;
-  height: 120px; }
+  min-height: 120px; }
 
 .subsection-star-container {
-  text-align: center;
-  margin-top: 2em; }
+  text-align: center; }
 
 .subsection-star {
   width: 120px; }
+
+.climate_and_energy .main-header {
+  background-color: #F75B5D; }
+.climate_and_energy .section-nav .active {
+  background-color: #F75B5D; }
+
+.natural_systems .main-header {
+  background-color: #F3A863; }
+.natural_systems .section-nav .active {
+  background-color: #F3A863; }
+
+.equity_and_empowerment .main-header {
+  background-color: #F2E168; }
+.equity_and_empowerment .section-nav .active {
+  background-color: #F2E168; }
+
+.health_and_safety .main-header {
+  background-color: #64DDA7; }
+.health_and_safety .section-nav .active {
+  background-color: #64DDA7; }
+
+.arts_education_and_culture .main-header {
+  background-color: #6CB6DC; }
+.arts_education_and_culture .section-nav .active {
+  background-color: #6CB6DC; }
+
+.economy_and_jobs .main-header {
+  background-color: #7B6AE2; }
+.economy_and_jobs .section-nav .active {
+  background-color: #7B6AE2; }
+
+.built_environment .main-header {
+  background-color: #DC6BAD; }
+.built_environment .section-nav .active {
+  background-color: #DC6BAD; }
 
 .subsection.ng-hide-add {
   -webkit-animation-duration: 1s;
