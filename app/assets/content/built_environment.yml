@@ -11,30 +11,35 @@ subsections:
 
   - title: Community Water Systems
     description: Provide a clean and secure water supply for all local users through the management of potable water, wastewater, stormwater, and other piped infrastructure.
+    star: content/stars/built_environment/identity_05-07_built-environment-2-02.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Community Water Systems"
 
   - title: Compact & Complete Communities
     description: Concentrate development in compact, human-scaled, walkable centers and neighborhoods that connect to transit, offer diverse uses and services, and provide housing options for families of all income.
+    star: content/stars/built_environment/identity_05-07_built-environment-2-03.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Compact & Complete Communities"
 
   - title: Housing Affordability
     description: Construct, preserve, and maintain an adequate and diverse supply of location-efficient and affordable housing options for all residents.
+    star: content/stars/built_environment/identity_05-07_built-environment-2-04.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Housing Affordability"
 
   - title: Infill & Redevelopment
     description: Focus new growth in infill areas and on development that does not require the extension of water, sewer, and road infrastructure or facilitate sprawl.
+    star: content/stars/built_environment/identity_05-07_built-environment-2-05.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Infill & Redevelopment"
 
   - title: Public Spaces
     description: Create a network of well-used and enjoyable parks and public spaces that feature equitable, convenient access for residents throughout the community.
+    star: content/stars/built_environment/identity_05-07_built-environment-2-06.png
     graphic: http://placehold.it/350x350
     content: |
             ### Park Access
@@ -53,6 +58,7 @@ subsections:
 
   - title: Transportation Choices
     description: Promote diverse transportation modes, including walking, bicycling, and transit, that are safe, low-cost, and reduce vehicle miles traveled.
+    star: content/stars/built_environment/identity_05-07_built-environment-2-07.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Transportation Choices"
