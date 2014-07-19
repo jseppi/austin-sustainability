@@ -9,13 +9,13 @@ App.directive('starMainNav', function () {
     template: '' +
       '<nav class="star-main-nav" role="navigation">' +
         '<ul>' +
-          '<li ng-repeat="section in sections">' +
+          '<li ng-repeat="section in sections" class="{{ section.key }}" ng-class="{\'selected\': selectedSection == section}">' +
             '<h3 class="section-title">' +
               '<a href="" ng-click="showSection(section)">' +
                 '{{section.config.title}}' +
               '</a>' +
             '</h3>' +
-            '<div ng-class="{\'selected\': selectedSection == section}" class="section-description">' +
+            '<div class="section-description">' +
               '<p>{{section.config.description}}</p>' +
               '<p class="text-center">' +
                 '<a class="btn btn btn-explore" ui-sref="{{section.key}}">' +
