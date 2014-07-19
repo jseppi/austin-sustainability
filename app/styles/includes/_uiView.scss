@@ -17,7 +17,7 @@
     }
 
     &.ng-enter-active {
-      
+
     }
 
     &.ng-leave {
@@ -28,5 +28,16 @@
 
     }
   }
+}
 
+.home {
+  .ui-view {
+    &.ng-enter {
+      @include animation-name(fadeInLeftBig);
+    }
+
+    &.ng-leave {
+      @include animation-name(fadeOutRightBig);
+    }
+  }
 }
