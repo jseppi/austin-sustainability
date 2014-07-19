@@ -1,5 +1,5 @@
 App
-  .constant('CONTENT_PATH', '/content/')
+  .constant('CONTENT_PATH', 'content/')
   .constant('SECTIONS', [
     'climate_and_energy',
     'natural_systems',
