@@ -4,42 +4,49 @@ lead: Sustainable communities support
 subsections:
   - title: Active Living
     description: Enable adults and kids to maintain healthy, active lifestyles by integrating physical activity into their daily routines.
+    star: content/stars/health_and_safety/identity_05-04_health-safety-2-01.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Active Living"
 
   - title: Community Health & Health Systems
     description: Achieve positive health outcomes and minimize health risk factors through a high quality local health system that is accessible and responsive to community needs.
+    star: content/stars/health_and_safety/identity_05-04_health-safety-2-02.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Community Health & Health Systems"
 
   - title: Emergency Prevention & Response
     description: Reduce harm to humans and property by utilizing long-term preventative and collaborative approaches to avoid emergency incidents and minimize their impacts.
+    star: content/stars/health_and_safety/identity_05-04_health-safety-2-03.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Emergency Prevention & Response"
 
   - title: Food Access & Nutrition
     description: Ensure that adults and children of all income levels have opportunities to lean about nutritious eating and have physical and economic access to fresh, healthful food and water.
+    star: content/stars/health_and_safety/identity_05-04_health-safety-2-04.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Food Access & Nutrition"
 
   - title: Indoor Air Quality
     description: Ensure that indoor air quality is healthy for all people.
+    star: content/stars/health_and_safety/identity_05-04_health-safety-2-05.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Indoor Air Quality"
 
   - title: Natural & Human Hazards
     description: Reduce vulnerability to all hazards, secure critical infrastructure, and ensure that communities are prepared to effectively respond to and recover from crisis.
+    star: content/stars/health_and_safety/identity_05-04_health-safety-2-06.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Natural & Human Hazards"
 
   - title: Safe Communities
     description: Prevent and reduce violent crime and increase perceptions of safety through interagency collaboration with residents as empowered partners.
+    star: content/stars/health_and_safety/identity_05-04_health-safety-2-07.png
     graphic: http://placehold.it/350x350
     content: |
             Here is some content from subsection "Safe Communities"
