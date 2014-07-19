@@ -1,0 +1,24 @@
+/* Regular */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url($font-url-pre + 'NotoSans-Regular-webfont.eot');
+    src: url($font-url-pre + 'NotoSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font-url-pre + 'NotoSans-Regular-webfont.woff') format('woff'),
+         url($font-url-pre + 'NotoSans-Regular-webfont.ttf') format('truetype'),
+         url($font-url-pre + 'NotoSans-Regular-webfont.svg#noto_sansregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url($font-url-pre + 'NotoSans-Bold-webfont.eot');
+    src: url($font-url-pre + 'NotoSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font-url-pre + 'NotoSans-Bold-webfont.woff') format('woff'),
+         url($font-url-pre + 'NotoSans-Bold-webfont.ttf') format('truetype'),
+         url($font-url-pre + 'NotoSans-Bold-webfont.svg#noto_sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
