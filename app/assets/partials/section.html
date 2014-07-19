@@ -1,4 +1,4 @@
-<div class="col-xs-3 section-about">
+<div class="col-xs-3 section-about about">
   <h2>{{section.title}}</h2>
   <p>{{section.lead}}</p>
   <nav class="section-nav" role="navigation">
@@ -17,7 +17,7 @@
     <img ng-src="{{selectedSubsection.star}}" alt="{{selectedSubsection.title}}" class="subsection-star"/>
   </div>
 </div>
-<div class="col-xs-9 section-content">
+<div class="col-xs-9 section-content content">
   <div class="subsection" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
     <h3>{{ss.title}}</h3>
     <div class="row">

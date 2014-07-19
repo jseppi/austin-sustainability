@@ -1,7 +1,7 @@
 
 body {
   font-family: $serif;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -58,4 +58,27 @@ h1, h2, h3, h4, h5 {
 
 .main-content {
   border-left: 2px solid $gray;
+}
+
+
+@media (min-width: $screen-md-min) {
+  .about {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .content {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .content {
+    padding-left: 40px;
+  }
 }
