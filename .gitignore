@@ -16,6 +16,6 @@ npm-debug.log
 test/test-results.xml
 
 # build stuff.
-dist
-dist/*
+./dist
+./dist/*
 _public/
