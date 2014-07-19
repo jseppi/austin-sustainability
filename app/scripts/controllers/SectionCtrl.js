@@ -6,7 +6,7 @@ App.controller('SectionCtrl', function ($scope, $state, sections) {
     return s.key === $state.current.name; }
   );
 
-  $scope.sectionLead = currentSection.config.lead;
+  $scope.section = currentSection.config;
   $scope.subsections = currentSection.config.subsections;
 
   //default to selecting the first subsection 
