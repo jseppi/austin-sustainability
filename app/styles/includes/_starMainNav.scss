@@ -8,8 +8,8 @@
 
     > li {
       background: $gray;
-      margin: 4px;
       color: white;
+      margin-bottom: 2px;
     }
   }
 
@@ -18,6 +18,7 @@
     margin: 0;
     font-family: $sans-serif;
     @include transition(all 1.0s ease-in-out);
+    border-bottom: 1px solid #ccc;
 
     a {
       text-decoration: none;
