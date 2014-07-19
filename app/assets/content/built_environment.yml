@@ -1,26 +1,38 @@
 title: Built Environment
 description: A sustainable community provides quality, choice, and access in the built environment, where people live, work, and play.
-lead: TODO
+lead: A sustainable built environment is characterized by
 subsections:
-  - title: Subsection 1
+  - title: Ambient Noise & Light
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Ambient Noise & Light"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Community Water Systems
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Community Water Systems"
 
-            [a link](http://google.com)
+  - title: Compact & Complete Communities
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Compact & Complete Communities"
 
+  - title: Housing Affordability
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Housing Affordability"
+
+  - title: Infill & Redevelopment
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Infill & Redevelopment"
+
+  - title: Public Spaces
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Public Spaces"
+
+  - title: Transportation Choices
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Transportation Choices"

@@ -1,26 +1,34 @@
 title: Natural Systems
 description: A sustainable community protects and restores the resources upon which life depends.
-lead: TODO
+lead: Natural resources that must be protected and restored include
 subsections:
-  - title: Subsection 1
+  - title: Green Infrastructure
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Green Infrastructure"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Invasive Species
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Invasive Species"
 
-            [a link](http://google.com)
+  - title: Natural Resource Protection
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Natural Resource Protection"
+
+  - title: Outdoor Air Quality
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Outdoor Air Quality"
+
+  - title: Water in the Environment
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Water in the Environment"
+
+  - title: Working Lands
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Working Lands"
 

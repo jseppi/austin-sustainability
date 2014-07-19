@@ -2,25 +2,32 @@ title: Climate and Energy
 description: A sustainable community includes the impacts caused by climate change and increases energy efficiency.
 lead: Sustainable energy and climate change solutions are characterized by
 subsections:
-  - title: Subsection 1
+  - title: Climate Adaptation
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Climate Adaptation"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Greenhouse Gas Mitigation
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Greenhouse Gas Mitigation"
 
-            [a link](http://google.com)
+  - title: Greening the Energy Supply
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Greening the Energy Supply"
 
+  - title: Industrial Sector Resource Efficiency
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Industrial Sector Resource Efficiency"
+
+  - title: Resource Efficient Building
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Resource Efficient Building"
+
+  - title: Waste Minimization
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Waste Minimization"

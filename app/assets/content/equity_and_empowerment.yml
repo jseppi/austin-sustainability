@@ -1,26 +1,34 @@
 title: Equity and Empowerment
 description: A sustainable community works toward equity and inclusion for all residents.
-lead: TODO
+lead: A community that is equitable and empowering features
 subsections:
-  - title: Subsection 1
+  - title: Civic Engagement
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Civic Engagement"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Civil & Human Rights
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Civil & Human Rights"
 
-            [a link](http://google.com)
+  - title: Environmental Justice
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Environmental Justice"
+
+  - title: Equitable Services & Access
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Equitable Services & Access"
+
+  - title: Human Services
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Human Services"
+
+  - title: Poverty Prevention & Alleviation
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Poverty Prevention & Alleviation"
 

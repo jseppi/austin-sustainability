@@ -1,26 +1,39 @@
 title: Health and Safety
-description: Section description text #TODO: was not specified
-lead: TODO
+description: Sustainable communities are healthy, resilient, and safe places for residents and buinesses.
+lead: Sustainable communities support
 subsections:
-  - title: Subsection 1
+  - title: Active Living
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Active Living"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Community Health & Health Systems
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Community Health & Health Systems"
 
-            [a link](http://google.com)
+  - title: Emergency Prevention & Response
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Emergency Prevention & Response"
+
+  - title: Food Access & Nutrition
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Food Access & Nutrition"
+
+  - title: Indoor Air Quality
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Indoor Air Quality"
+
+  - title: Natural & Human Hazards
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Natural & Human Hazards"
+
+  - title: Safe Communities
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Safe Communities"
 

@@ -1,26 +1,35 @@
 title: Economy and Jobs
 description: A sustainable community provides access to quality jobs and shared prosperity for all.
-lead: TODO
+lead: A sustainable economy is characterized by measures that support
 subsections:
-  - title: Subsection 1
+  - title: Business Retention & Redevelopment
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Business Retention & Redevelopment"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Green Market Development
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Green Market Development"
 
-            [a link](http://google.com)
+  - title: Local Economy
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Local Economy"
+
+  - title: Quality Jobs & Living Wages
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Quality Jobs & Living Wages"
+
+  - title: Targeted Industry Development
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Targeted Industry Development"
+
+  - title: Workforce Readiness
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Workforce Readiness"
+
 

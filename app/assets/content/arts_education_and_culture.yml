@@ -1,26 +1,29 @@
 title: Arts, Education, and Culture
 description: A sustainable community supports vibrant, connected, and diverse cultures.
-lead: TODO
+lead: A vibrant and sustainable culture is marked by
 subsections:
-  - title: Subsection 1
+  - title: Arts & Culture
     graphic: http://placehold.it/350x350
     content: |
-            Here is some content from subsection 1
+            Here is some content from subsection "Arts & Culture"
 
-            * list 1
-            * list 2
-            * list 3
-
-            Content after the list
-
-            ## A subheading
-
-            Content after the subheading
-
-  - title: Subsection 2
+  - title: Community Cohesion
     graphic: http://placehold.it/350x350
     content: |
-            Subsection 2 content
+            Here is some content from subsection "Community Cohesion"
 
-            [a link](http://google.com)
+  - title: Educational Opportunity & Attainment
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Educational Opportunity & Attainment"
+
+  - title: Historic Preservation
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Historic Preservation"
+
+  - title: Social & Cultural Diversity
+    graphic: http://placehold.it/350x350
+    content: |
+            Here is some content from subsection "Social & Cultural Diversity"
 
