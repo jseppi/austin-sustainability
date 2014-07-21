@@ -13,9 +13,17 @@ module.exports = function(grunt) {
       },
       src: './_public/**/*'
     },
+    'gh-pages': {
+      options: {
+        base: '_public'
+      },
+      src: ['**']
+    }
   });
 
   grunt.loadNpmTasks('grunt-node-webkit-builder');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['nodewebkit']);
+
 };

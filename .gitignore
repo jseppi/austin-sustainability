@@ -19,4 +19,4 @@ test/test-results.xml
 /dist
 /dist/*
 /_public/
-
+/.grunt/
