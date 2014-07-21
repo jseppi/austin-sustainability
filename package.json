@@ -13,7 +13,8 @@
     "dev": "brunch watch --server",
     "test": "karma start test/karma.conf.js",
     "app": "brunch build -P && nodewebkit _public",
-    "deploy": "grunt"
+    "deploy": "grunt",
+    "pages": "brunch build -P && grunt gh-pages"
   },
   "dependencies": {
     "auto-reload-brunch": ">= 1.0 < 1.8",
