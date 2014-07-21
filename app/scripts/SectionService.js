@@ -6,7 +6,7 @@ App.factory('SectionService', function ($http, $q, CONTENT_PATH, SECTIONS) {
   var _isLoaded = false;
   var _data = [];
 
-  service.load = function () {
+  service.getSections = function () {
     var deferred = $q.defer();
     if (_isLoaded) {
       deferred.resolve(_data);
