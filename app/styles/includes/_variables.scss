@@ -2,6 +2,13 @@
 $gray: #7f7f7f;
 
 $color-sets: (
+    //('name', (
+    //    secondary menu colors
+    //), (
+    //    data vis colors
+    //), (
+    //    main navigation colors
+    //)
     ('climate_and_energy', (
         #E26699,
         #EA6084,
@@ -20,6 +27,9 @@ $color-sets: (
         #F3A6A7,
         #F1CCCD,
         #F0F0F0
+    ), (
+        #BB6E6E,
+        #D26666
     )),
     ('natural_systems', (
         #F76D5B,
@@ -39,6 +49,9 @@ $color-sets: (
         #F1CCA8,
         #F2DECD,
         #F0F0F0
+    ), (
+        #BA9470,
+        #D19C6A
     )),
     ('equity_and_empowerment', (
         #F4B75E,
@@ -58,6 +71,9 @@ $color-sets: (
         #F2EAAC,
         #F2EDCE,
         #F0F0F0
+    ), (
+        #BAB074,
+        #D0C56E
     )),
     ('health_and_safety', (
         #CCE270,
@@ -77,6 +93,9 @@ $color-sets: (
         #AAE7CD,
         #CDEADE,
         #F0F0F2
+    ), (
+        #72AE92,
+        #779E8A
     )),
     ('arts_education_and_culture', (
         #60D3B5,
@@ -96,6 +115,9 @@ $color-sets: (
         #ACD4E7,
         #CFE3EA,
         #F0F0F0
+    ), (
+        #7A929D,
+        #72A7C2
     )),
     ('economy_and_jobs', (
         #6DA3DD,
@@ -115,6 +137,9 @@ $color-sets: (
         #B5ACE9,
         #D4CDEC,
         #F0F0F0
+    ), (
+        #7F7A9E,
+        #7A6DC3
     )),
     ('built_environment', (
         #9366D6,
@@ -134,6 +159,9 @@ $color-sets: (
         #E7ACCE,
         #EACFDE,
         #F0F0F0
+    ), (
+        #9E7A92,
+        #C270A0
     ))
 );
 

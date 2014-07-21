@@ -13,7 +13,6 @@
     > li {
       padding: 4px 4px 4px 16px;
       background: white;
-      color: $gray;
       border-left: 1px solid $gray;
       border-right: 1px solid $gray;
       border-bottom: 1px solid $gray;
@@ -38,19 +37,32 @@
 }
 
 .section-content {
-  
+
 }
 
 .subsection-description {
   margin-top: 2em;
-  height: 120px;
+  min-height: 120px;
 }
 
 .subsection-star-container {
   text-align: center;
-  margin-top: 2em;
 }
 
 .subsection-star {
   width: 120px;
 }
+
+
+@each $color-set in $color-sets {
+  &.#{nth($color-set, 1)} {
+    .main-header {
+      background-color: #{nth(nth($color-set, 3), 5)};
+    }
+
+    .section-nav .active {
+      background-color: #{nth(nth($color-set, 3), 5)};
+    }
+  }
+}
+

@@ -1,7 +1,7 @@
 
 body {
   font-family: $serif;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5 {
 
 .main-header {
   background: $gray;
+  @include transition(all 1.0s ease-in-out);
 
   min-height: 4em;
 
@@ -57,4 +58,45 @@ h1, h2, h3, h4, h5 {
 
 .main-content {
   border-left: 1px solid lighten($gray, 10%);
+}
+
+.about, .content {
+  h2, h3 {
+    font-size: 2.3em;
+    min-height: 2.3em;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: $screen-xs-min) {
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content {
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .content {
+    padding-left: 45px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .about {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .content {
+    padding-left: 60px;
+  }
 }
