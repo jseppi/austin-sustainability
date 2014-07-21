@@ -14,7 +14,7 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
       controller: 'HomeCtrl',
       resolve: {
         sections: function (SectionService) {
-          return SectionService.load();
+          return SectionService.getSections();
         }
       }
     });
@@ -28,7 +28,7 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
         controller: 'SectionCtrl',
         resolve: {
           sections: function (SectionService) {
-            return SectionService.load();
+            return SectionService.getSections();
           }
         }
       });
@@ -37,4 +37,9 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     
     $urlRouterProvider.otherwise('/');
     return;
+});
+
+App.run(function (SectionService) {
+  console.log('loading sections')
+  SectionService.getSections();
 });

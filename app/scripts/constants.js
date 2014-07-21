@@ -9,4 +9,5 @@ App
     'economy_and_jobs',
     'built_environment',
   ])
+  .constant('HOME_STAR', 'content/stars/home/identity_05_main-menu-08.png')
   ;

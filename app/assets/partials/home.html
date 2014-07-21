@@ -11,7 +11,7 @@
 <div class="col-xs-9 main-content content">
   <div class="row">
     <div class="col-xs-3">
-      <nav class="star-main-nav" role="navigation">
+      <nav class="main-nav" role="navigation">
         <ul>
           <li ng-repeat="section in sections" class="{{ section.key }}" ng-class="{'selected': expandedSection == section}">
             <h3 class="section-title">
@@ -22,7 +22,7 @@
             <div class="section-description">
               <p>{{section.config.description}}</p>
               <p class="text-center">
-                <a class="btn btn btn-explore" ui-sref="{section.key}}">
+                <a class="btn btn btn-explore" ui-sref="{{section.key}}">
                   Explore
                 </a>
               </p>
@@ -32,7 +32,9 @@
       </nav>
     </div>
     <div class="col-xs-8 col-xs-push-1">
-      <div star-septagram></div>
+      <div class="main-star-container">
+        <img ng-src="{{starPath}}" class="main-star" />
+      </div>
     </div>
   </div>
 </div>
