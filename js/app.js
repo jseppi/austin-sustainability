@@ -14,7 +14,7 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
       controller: 'HomeCtrl',
       resolve: {
         sections: function (SectionService) {
-          return SectionService.load();
+          return SectionService.getSections();
         }
       }
     });
@@ -28,7 +28,7 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
         controller: 'SectionCtrl',
         resolve: {
           sections: function (SectionService) {
-            return SectionService.load();
+            return SectionService.getSections();
           }
         }
       });
@@ -39,6 +39,11 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     return;
 });
 
+App.run(function (SectionService) {
+  console.log('loading sections')
+  SectionService.getSections();
+});
+
 'use strict';
 
 App.factory('SectionService', function ($http, $q, CONTENT_PATH, SECTIONS) {
@@ -47,7 +52,7 @@ App.factory('SectionService', function ($http, $q, CONTENT_PATH, SECTIONS) {
   var _isLoaded = false;
   var _data = [];
 
-  service.load = function () {
+  service.getSections = function () {
     var deferred = $q.defer();
     if (_isLoaded) {
       deferred.resolve(_data);
@@ -90,6 +95,7 @@ App
     'economy_and_jobs',
     'built_environment',
   ])
+  .constant('HOME_STAR', 'content/stars/home/identity_05_main-menu-08.png')
   ;
 'use strict';
 
@@ -106,11 +112,26 @@ App
 
 'use strict';
 
-App.controller('HomeCtrl', function ($scope, $state, sections) {
+App.controller('HomeCtrl',
+  function ($scope, $state, HOME_STAR, sections) {
 
-  $scope.sections = sections;
+    $scope.sections = sections;
+    $scope.expandedSection = null;
+    $scope.starPath = HOME_STAR;
+    
+    $scope.expandSection = function (section) {
+      if ($scope.expandedSection === section) {
+        $scope.expandedSection = null;
+        $scope.starPath = HOME_STAR;
+      }
+      else {
+        $scope.expandedSection = section;
+        $scope.starPath = section.config.star;
+      }
+    };
 
-});
+  }
+);
 
 'use strict';
 
@@ -131,52 +152,6 @@ App.controller('SectionCtrl', function ($scope, $state, sections) {
     $scope.selectedSubsection = ss;
   };
 
-});
-
-'use strict';
-
-App.directive('starMainNav', function () {
-  return {
-    restrict: 'A',
-    scope: {
-      sections: '=starMainNav'
-    },
-    template: '' +
-      '<nav class="star-main-nav" role="navigation">' +
-        '<ul>' +
-          '<li ng-repeat="section in sections" class="{{ section.key }}" ng-class="{\'selected\': selectedSection == section}">' +
-            '<h3 class="section-title">' +
-              '<a href="" ng-click="showSection(section)">' +
-                '{{section.config.title}}' +
-              '</a>' +
-            '</h3>' +
-            '<div class="section-description">' +
-              '<p>{{section.config.description}}</p>' +
-              '<p class="text-center">' +
-                '<a class="btn btn btn-explore" ui-sref="{{section.key}}">' +
-                  'Explore' +
-                '</a>' +
-              '</p>' +
-            '</div>' +
-          '</li>' +
-        '</ul>' +
-      '</nav>',
-    link: function (scope) {
-
-      scope.selectedSection = null;
-      
-      scope.showSection = function (section) {
-        if (scope.selectedSection === section) {
-          scope.selectedSection = null;
-        }
-        else {
-          scope.selectedSection = section;
-        }
-      };
-
-      return;
-    }
-  };
 });
 
 'use strict';
@@ -206,17 +181,5 @@ App.
       }
     };
   });
-'use strict';
-
-App.directive('starSeptagram', function () {
-    return {
-      restrict: 'A',
-      template: '<div><img src="http://placehold.it/500x500" /></div>',
-      link: function (scope, element, attrs) {
-        console.log('in septagram');
-      }
-    };
-
-});
 
 ;
