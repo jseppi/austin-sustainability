@@ -1,13 +1,11 @@
 .subsection {
-  &.ng-hide-add {
-    @include animation-duration(1.0s);
-    @include animation-name(fadeOutDown)
+  &.ng-hide-add-active {
+    
   }
-  
+
   &.ng-hide-remove {
     @include animation-duration(1.0s);
-    @include animation-name(fadeInUpBig);
-    /* the transition is defined in the active class */
+    @include animation-name(fadeIn);
   }
 
 }

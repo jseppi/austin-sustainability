@@ -9,14 +9,6 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
-.ng-hide {
-  /* this is just another form of hiding an element */
-  display:block!important;
-  position:absolute;
-  top:-9999px;
-  left:-9999px;
-}
-
 .about, .content {
   h2, h3 {
     font-size: 2.3em;
