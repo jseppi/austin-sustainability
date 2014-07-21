@@ -220,4 +220,3 @@ App.directive('starSeptagram', function () {
 });
 
 ;
-//# sourceMappingURL=app.js.map
