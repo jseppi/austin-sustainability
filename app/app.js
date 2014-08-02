@@ -13,6 +13,9 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
       templateUrl: 'partials/home.html',
       controller: 'HomeCtrl',
       resolve: {
+        home: function (HomeService) {
+          return HomeService.getContent();
+        },
         sections: function (SectionService) {
           return SectionService.getSections();
         }
@@ -39,7 +42,7 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     return;
 });
 
-App.run(function (SectionService) {
-  console.log('loading sections')
+App.run(function (SectionService, HomeService) {
   SectionService.getSections();
+  HomeService.getContent();
 });
