@@ -48,7 +48,9 @@ subsections:
   - title: Waste Minimization
     description: Reduce and reuse material waste produced in the community.
     star: content/stars/climate_and_energy/identity_05-01_climate-energy-2-07.png
-    graphic: http://placehold.it/350x350
+    graphic: content/visualizations/climate-energy_01-03.png
+    graphicDesc: |
+            Optional visualization description
     content: |
             Austin had to document progress in 10 areas related to waste minimization. One of these areas is related to Austin's goal for Zero Waste.
 

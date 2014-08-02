@@ -55,7 +55,7 @@ App.
       },
       template: "" +
         "<div ng-swipe-right='swipeRight(slide)' ng-swipe-left='swipeLeft(slide)' class='slide-content' ng-show='slide.isActive'>" +
-          "<p star-markdown='slide.content'></p>" +
+          "<div star-markdown='slide.content'></div>" +
           "<img ng-src='{{slide.image}}'/>" +
         "</div>",
       link: function (scope, element, attrs, ctrl) {
