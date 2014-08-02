@@ -12,4 +12,14 @@
 
 .main-star {
   width: 500px;
+  max-width: 100%;
+}
+
+
+@media (min-width: $screen-xs-min) {
+  .main-star-container {
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
 }
