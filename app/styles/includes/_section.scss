@@ -1,5 +1,14 @@
 .section-about {
-  border-right: 1px solid lighten($gray, 10%);
+  @media (min-width: $screen-sm-min) {
+    border-right: 1px solid lighten($gray, 10%);
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .vertical-separator {
+      border-bottom: 1px solid lighten($gray, 10%);
+      padding-bottom: 3em;
+    }
+  }
 }
 
 .section-nav {
