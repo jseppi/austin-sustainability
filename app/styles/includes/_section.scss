@@ -35,33 +35,6 @@
   }
 }
 
-.section-content {
-
-}
-
-.subsection-description {
-  margin-top: 2em;
-  min-height: 120px;
-}
-
-.subsection-star-container {
-  text-align: center;
-}
-
-.subsection-star {
-  width: 40%;
-  min-width: 120px;
-}
-
-.subsection-graphic {
-  text-align: center;
-
-  img {
-    max-width: 100%;
-  }
-}
-
-
 @each $color-set in $color-sets {
   &.#{nth($color-set, 1)} {
     .main-header {

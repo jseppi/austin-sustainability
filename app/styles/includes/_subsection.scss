@@ -1,11 +1,32 @@
 .subsection {
   &.ng-hide-add-active {
-    
+
   }
 
   &.ng-hide-remove {
     @include animation-duration(1.0s);
     @include animation-name(fadeIn);
   }
+}
 
+.subsection-description {
+  margin-top: 2em;
+  min-height: 120px;
+}
+
+.subsection-star-container {
+  text-align: center;
+}
+
+.subsection-star {
+  width: 40%;
+  min-width: 120px;
+}
+
+.subsection-graphic {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+  }
 }
