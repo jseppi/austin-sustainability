@@ -1,14 +1,24 @@
+.home {
+  .main-header a {
+    cursor: default;
+  }
+}
+
 .main-header {
   background: $gray;
   @include transition(all 1.0s ease-in-out);
 
   min-height: 4em;
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   h1 {
     font-size: 1.1em;
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
     margin: 0;
   }
 
@@ -16,7 +26,6 @@
     font-family: $serif;
     font-size: 1.3em;
     word-spacing: 1px;
-    color: white;
     margin: 0;
   }
 

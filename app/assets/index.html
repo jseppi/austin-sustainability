@@ -19,13 +19,14 @@
     <div class="container-fluid">
       <div class="row">
         <header class="main-header" role="banner">
-          <a ui-sref="home">
+          <a ui-sref="home" ng-class="{'active': !sectionClass}">
             <img class="star-icon" src="img/star-icon.svg" alt="STAR icon">
+
+            <div class="head-text">
+              <h1>Austin Sustainability</h1>
+              <h2>What Sustainability Looks Like</h2>
+            </div>
           </a>
-          <div class="head-text">
-            <h1>Austin Sustainability</h1>
-            <h2>What Sustainability Looks Like</h2>
-          </div>
         </header>
       </div>
       <div class="row">
