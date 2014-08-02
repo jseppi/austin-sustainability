@@ -1,4 +1,4 @@
-<div class="col-xs-3 section-about about">
+<div class="col-xs-12 col-sm-6 col-md-3 section-about about">
   <div class="row">
     <h2>{{section.title}}</h2>
   </div>
@@ -17,8 +17,8 @@
     </nav>
   </div>
   <div class="row">
-    <div class="subsection-description">
-      <p>{{selectedSubsection.description}}</p>
+    <div class="subsection-description" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
+      <p>{{ss.description}}</p>
     </div>
   </div>
   <div class="row">
@@ -27,16 +27,16 @@
     </div>
   </div>
 </div>
-<div class="col-xs-9 section-content content">
+<div class="col-xs-12 col-sm-6 col-md-9 section-content content">
   <div class="subsection" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
     <div class="row">
       <h3>{{ss.title}}</h3>
     </div>
     <div class="row">
-      <div class="col-xs-7">
+      <div class="col-xs-12 col-md-7">
         <div class="subsection-content" star-markdown="ss.content"></div>
       </div>
-      <div class="col-xs-5">
+      <div class="col-xs-12 col-md-5">
         <div class="subsection-graphic">
           <img ng-src="{{ss.graphic}}"/>
         </div>

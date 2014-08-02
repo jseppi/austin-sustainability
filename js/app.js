@@ -13,6 +13,9 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
       templateUrl: 'partials/home.html',
       controller: 'HomeCtrl',
       resolve: {
+        home: function (HomeService) {
+          return HomeService.getContent();
+        },
         sections: function (SectionService) {
           return SectionService.getSections();
         }
@@ -39,51 +42,11 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     return;
 });
 
-App.run(function (SectionService) {
-  console.log('loading sections')
+App.run(function (SectionService, HomeService) {
   SectionService.getSections();
+  HomeService.getContent();
 });
 
-'use strict';
-
-App.factory('SectionService', function ($http, $q, CONTENT_PATH, SECTIONS) {
-
-  var service = {};
-  var _isLoaded = false;
-  var _data = [];
-
-  service.getSections = function () {
-    var deferred = $q.defer();
-    if (_isLoaded) {
-      deferred.resolve(_data);
-    }
-    else {
-
-      var promises = _.map(SECTIONS, function (section) {
-        var path = CONTENT_PATH + section + ".yml";
-        return $http.get(path, {cache: true})
-          .then(function (response) {
-            var sectionConfig = response.data;
-            return {
-              key: section,
-              config: jsyaml.load(sectionConfig)
-            };
-          });
-      });
-
-      $q.all(promises).then(function (sections) {
-        _isLoaded = true;
-        _data = sections;
-        deferred.resolve(_data);
-      });
-  
-    }
-    
-    return deferred.promise;
-  };
-
-  return service;
-});
 App
   .constant('CONTENT_PATH', 'content/')
   .constant('SECTIONS', [
@@ -113,11 +76,13 @@ App
 'use strict';
 
 App.controller('HomeCtrl',
-  function ($scope, $state, HOME_STAR, sections) {
+  function ($scope, $state, home, sections, HOME_STAR) {
 
+    $scope.homeContent = home;
     $scope.sections = sections;
     $scope.expandedSection = null;
     $scope.starPath = HOME_STAR;
+
     
     $scope.expandSection = function (section) {
       if ($scope.expandedSection === section) {
@@ -155,6 +120,38 @@ App.controller('SectionCtrl', function ($scope, $state, sections) {
 });
 
 'use strict';
+App.
+  directive('starHomeSlider', function () {
+    return {
+      restrict: 'A',
+      scope: {
+        slides: '=starHomeSlider'
+      },
+      template: "" + 
+        "<div class='home-slider'>" +
+          "<ul class='slide-controls'>" + 
+            "<li ng-repeat='slide in slides' ng-class='{active: slide.isActive}'>" +
+              "<button type='button' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
+            "</li>" +
+          "</ul>" +
+          "<div ng-repeat='slide in slides' ng-show='slide.isActive'>" +
+            "<p star-markdown='slide.content'></p>" +
+            "<img ng-src='{{slide.image}}'/>" +
+          "</div>" +
+        "</div>",
+      link: function (scope) {
+        var firstSlide = _.first(scope.slides);
+        firstSlide.isActive = true;
+
+        scope.makeActive = function (slide) {
+          var currActive = _.findWhere(scope.slides, {'isActive': true});
+          currActive.isActive = false;
+          slide.isActive = true;
+        };
+      }
+    };
+  });
+'use strict';
 // Based on btford/angular-markdown-directive
 // https://github.com/btford/angular-markdown-directive
 
@@ -181,5 +178,45 @@ App.
       }
     };
   });
+'use strict';
 
-;
+App.factory('HomeService', function ($http, $q, CONTENT_PATH) {
+
+  var service = {};
+
+  service.getContent = function () {
+
+    var path = CONTENT_PATH + 'home.yml';
+    return $http.get(path, {cache: true})
+      .then(function (response) {
+        var homeConfig = response.data;
+        return jsyaml.load(homeConfig)
+      });
+  };
+
+  return service;
+});
+'use strict';
+
+App.factory('SectionService', function ($http, $q, CONTENT_PATH, SECTIONS) {
+
+  var service = {};
+
+  service.getSections = function () {
+    var promises = _.map(SECTIONS, function (section) {
+      var path = CONTENT_PATH + section + ".yml";
+      return $http.get(path, {cache: true})
+        .then(function (response) {
+          var sectionConfig = response.data;
+          return {
+            key: section,
+            config: jsyaml.load(sectionConfig)
+          };
+        });
+    });
+
+    return $q.all(promises);
+  };
+
+  return service;
+});
