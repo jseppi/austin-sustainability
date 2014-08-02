@@ -16,13 +16,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (max-width: $screen-md-min) {
-  .about .row {
-    padding-left: inherit;
-    padding-right: inherit;
-  }
-}
-
 @media (min-width: $screen-xs-min) {
   .about {
     padding-left: 20px;
@@ -58,5 +51,22 @@ h1, h2, h3, h4, h5 {
 
   .content {
     padding-left: 60px;
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  .about, .content {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .row {
+      padding-left: inherit;
+      padding-right: inherit;
+    }
+  }
+
+  .subsection {
+    padding-left: inherit;
+    padding-right: inherit;
   }
 }
