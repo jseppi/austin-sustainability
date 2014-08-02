@@ -1,5 +1,13 @@
 .home-slider {
 
+  .slide-content {
+
+    > img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   ul.slide-controls {
     bottom: -45px;
@@ -11,7 +19,6 @@
 
     > li {
       display: inline-block;
-      margin: 0px 5px;
       padding: 0px;
       cursor: pointer;
 

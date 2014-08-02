@@ -13,7 +13,7 @@ App.
               "<button type='button' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
             "</li>" +
           "</ul>" +
-          "<div ng-repeat='slide in slides' ng-show='slide.isActive'>" +
+          "<div class='slide-content' ng-repeat='slide in slides' ng-show='slide.isActive'>" +
             "<p star-markdown='slide.content'></p>" +
             "<img ng-src='{{slide.image}}'/>" +
           "</div>" +
