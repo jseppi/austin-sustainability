@@ -1,7 +1,6 @@
 
 body {
   font-family: $serif;
-  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -29,9 +28,14 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: $screen-md-min) {
+  body {
+    overflow: hidden;
+  }
+
   .about {
     padding-left: 40px;
     padding-right: 40px;
+
   }
 
   .content {
@@ -47,5 +51,22 @@ h1, h2, h3, h4, h5 {
 
   .content {
     padding-left: 60px;
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  .about, .content {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .row {
+      padding-left: inherit;
+      padding-right: inherit;
+    }
+  }
+
+  .subsection {
+    padding-left: inherit;
+    padding-right: inherit;
   }
 }

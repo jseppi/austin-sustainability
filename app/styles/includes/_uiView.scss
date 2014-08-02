@@ -3,8 +3,8 @@
 
   .ui-view {
     &.ng-enter, &.ng-leave {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
+      -webkit-animation-duration: $transition-duration-main;
+      animation-duration: $transition-duration-main;
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
       position: absolute;

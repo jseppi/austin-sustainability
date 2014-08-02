@@ -3,7 +3,6 @@
 }
 
 .section-nav {
-
   ul {
 
     padding: 0;
@@ -36,24 +35,6 @@
   }
 }
 
-.section-content {
-
-}
-
-.subsection-description {
-  margin-top: 2em;
-  min-height: 120px;
-}
-
-.subsection-star-container {
-  text-align: center;
-}
-
-.subsection-star {
-  width: 120px;
-}
-
-
 @each $color-set in $color-sets {
   &.#{nth($color-set, 1)} {
     .main-header {
@@ -65,4 +46,3 @@
     }
   }
 }
-
