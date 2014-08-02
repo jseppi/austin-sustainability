@@ -12,6 +12,10 @@
 .subsection-description {
   margin-top: 2em;
   min-height: 120px;
+
+  @media (max-width: $screen-md-min) {
+    min-height: 0;
+  }
 }
 
 .subsection-star-container {
@@ -21,6 +25,10 @@
 .subsection-star {
   width: 40%;
   min-width: 120px;
+
+  @media (max-width: $screen-md-min) {
+    margin-top: 10px;
+  }
 }
 
 .subsection-graphic {
