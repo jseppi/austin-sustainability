@@ -17,8 +17,8 @@
     </nav>
   </div>
   <div class="row">
-    <div class="subsection-description">
-      <p>{{selectedSubsection.description}}</p>
+    <div class="subsection-description" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
+      <p>{{ss.description}}</p>
     </div>
   </div>
   <div class="row">
