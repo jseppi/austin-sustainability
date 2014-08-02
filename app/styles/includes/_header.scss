@@ -6,7 +6,7 @@
 
 .main-header {
   background: $gray;
-  @include transition(all 1.0s ease-in-out);
+  @include transition(all $transition-duration-main ease-in-out);
 
   min-height: 4em;
 
@@ -34,8 +34,17 @@
   }
 
   .star-icon {
-      float: left;
-      margin: 25px 20px 0 50px;
-      height: 80px;
+    float: left;
+    margin: 25px 20px 0 50px;
+    width: 80px;
+    height: 78px;
+
+    background-image: url(../img/star-icon-home.png);
+    background-size: 80px 78px;
+    @include transition(all $transition-duration-main ease-in-out);
+  }
+
+  a:hover .star-icon {
+    @include transition(all 0.1s ease-in-out);
   }
 }

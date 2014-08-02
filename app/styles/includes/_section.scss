@@ -48,6 +48,15 @@
   &.#{nth($color-set, 1)} {
     .main-header {
       background-color: #{nth(nth($color-set, 3), 5)};
+
+      .star-icon {
+        background-image: url('../img/star-icon-#{nth($color-set, 1)}.png');
+      }
+
+      a:hover .star-icon {
+        background-image: url('../img/star-icon-home.png');
+      }
+
     }
 
     .section-nav .active {
