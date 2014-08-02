@@ -4,7 +4,7 @@
   }
 
   &.ng-hide-remove {
-    @include animation-duration(0.25s);
+    @include animation-duration($transition-duration-subsection);
     @include animation-name(fadeIn);
   }
 }
