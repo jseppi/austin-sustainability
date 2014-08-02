@@ -4,12 +4,7 @@
     Austin<br/>
     Sustainability
   </h1>
-  <div class="home-slides">
-    <div class="slide-content" ng-repeat="slide in homeContent.slides">
-      <p star-markdown="slide.content"></p>
-      <img ng-src="{{slide.image}}" alt="slide-image"/>
-    </div>
-  </div>
+  <div star-home-slider="homeContent.slides"></div>
 </div>
 
 <div class="col-xs-9 main-content content">
