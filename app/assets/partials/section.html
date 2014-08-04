@@ -42,10 +42,7 @@
         <div class="subsection-content" star-markdown="ss.content"></div>
       </div>
       <div class="col-xs-12 col-md-8">
-        <div class="subsection-graphic">
-          <div ng-if="ss.graphicDesc" star-markdown="ss.graphicDesc" class="graphic-description"></div>
-          <img ng-src="{{ss.graphic}}"/>
-        </div>
+        <div star-visualization="ss.visualizations" class="subsection-graphic"></div>
       </div>
     </div>
   </div>
