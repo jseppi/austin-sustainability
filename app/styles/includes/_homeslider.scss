@@ -2,14 +2,10 @@
 
   .slide-content {
 
-    @include user-select(none);
-    cursor: default;
-
     > img {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      pointer-events: none;
       margin-bottom: 1em;
     }
   }

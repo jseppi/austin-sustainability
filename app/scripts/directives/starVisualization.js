@@ -7,7 +7,7 @@ App.
         visualizations: '=starVisualization'
       },
       template: "" + 
-        "<div class='visualization-slider'>" +
+        "<div class='visualization-slider swipable'>" +
           "<ul ng-if='visualzations.length' class='vis-controls'>" + 
             "<li ng-repeat='vis in visualizations' ng-class='{active: vis.isActive}'>" +
               "<button type='button' ng-click='makeActive(vis)'>{{$index + 1}}</button>" +

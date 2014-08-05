@@ -7,7 +7,7 @@ App.
         slides: '=starHomeSlider'
       },
       template: "" + 
-        "<div class='home-slider'>" +
+        "<div class='home-slider swipable'>" +
           "<ul class='slide-controls'>" + 
             "<li ng-repeat='slide in slides' ng-class='{active: slide.isActive}'>" +
               "<button type='button' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
