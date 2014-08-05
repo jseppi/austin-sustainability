@@ -10,9 +10,6 @@ subsections:
         - graphic: http://placehold.it/350x350
           title: Visualization Title
           description: Optional visualization description
-        - graphic: http://placehold.it/350x150
-          title: Vis title 2
-          description: description 2
     content: |
             Here is some content from subsection "Climate Adaptation"
 

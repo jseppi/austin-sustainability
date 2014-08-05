@@ -8,9 +8,9 @@ App.
       },
       template: "" + 
         "<div class='home-slider swipable'>" +
-          "<ul class='slide-controls'>" + 
+          "<ul class='swipe-controls'>" + 
             "<li ng-repeat='slide in slides' ng-class='{active: slide.isActive}'>" +
-              "<button type='button' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
+              "<button type='button' title='Click or swipe to see content' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
             "</li>" +
           "</ul>" +
           "<div ng-repeat='slide in slides' star-home-slider-content='slide'></div>" +

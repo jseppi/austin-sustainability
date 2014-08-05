@@ -8,9 +8,9 @@ App.
       },
       template: "" + 
         "<div class='visualization-slider swipable'>" +
-          "<ul ng-if='visualzations.length' class='vis-controls'>" + 
+          "<ul ng-if='visualizations.length > 1' class='swipe-controls'>" + 
             "<li ng-repeat='vis in visualizations' ng-class='{active: vis.isActive}'>" +
-              "<button type='button' ng-click='makeActive(vis)'>{{$index + 1}}</button>" +
+              "<button type='button' title='Click or swipe to see content' ng-click='makeActive(vis)'>{{$index + 1}}</button>" +
             "</li>" +
           "</ul>" +
           "<div ng-repeat='vis in visualizations' star-visualization-content='vis'></div>" +
