@@ -47,4 +47,32 @@
   a:hover .star-icon {
     @include transition(all 0.1s ease-in-out);
   }
+
+  .hub-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px 10px 0px 10px;
+    height: 90px;
+    width: 80px;
+    border-left: 1px solid white;
+    text-align: center;
+    font-family: $sans-serif;
+
+    .nav-text {
+      color: white;
+      font-size: 0.9em;
+    }
+  }
+
+  .hub-icon {
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .home-icon {
+    margin: 5px 0px 5px 0px;
+    height: 40px;
+  }
+
 }
