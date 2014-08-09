@@ -23,8 +23,16 @@
 }
 
 .subsection-content {
+  
   h4:first-child {
     margin-top: 0;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .subsection-content {
+    overflow-y: auto;
+    max-height: 500px;
   }
 }
 
