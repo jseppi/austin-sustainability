@@ -22,6 +22,12 @@
   text-align: center;
 }
 
+.subsection-content {
+  h4:first-child {
+    margin-top: 0;
+  }
+}
+
 .subsection-star {
   width: 40%;
   min-width: 120px;
@@ -29,13 +35,5 @@
   @media (max-width: $screen-md-min) {
     margin-top: 10px;
     max-width: 200px;
-  }
-}
-
-.subsection-graphic {
-  text-align: center;
-
-  img {
-    max-width: 100%;
   }
 }

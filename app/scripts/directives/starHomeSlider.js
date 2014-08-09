@@ -7,10 +7,10 @@ App.
         slides: '=starHomeSlider'
       },
       template: "" + 
-        "<div class='home-slider'>" +
-          "<ul class='slide-controls'>" + 
+        "<div class='home-slider swipable'>" +
+          "<ul class='swipe-controls'>" + 
             "<li ng-repeat='slide in slides' ng-class='{active: slide.isActive}'>" +
-              "<button type='button' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
+              "<button type='button' title='Click or swipe to see content' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
             "</li>" +
           "</ul>" +
           "<div ng-repeat='slide in slides' star-home-slider-content='slide'></div>" +
@@ -55,7 +55,7 @@ App.
       },
       template: "" +
         "<div ng-swipe-right='swipeRight(slide)' ng-swipe-left='swipeLeft(slide)' class='slide-content' ng-show='slide.isActive'>" +
-          "<p star-markdown='slide.content'></p>" +
+          "<div star-markdown='slide.content'></div>" +
           "<img ng-src='{{slide.image}}'/>" +
         "</div>",
       link: function (scope, element, attrs, ctrl) {

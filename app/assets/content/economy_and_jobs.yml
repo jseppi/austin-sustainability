@@ -6,28 +6,40 @@ subsections:
   - title: Business Retention & Redevelopment
     description: Foster economic prosperity and stability by retaining and expanding businesses with support from the business community.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-01.png
-    graphic: http://placehold.it/350x350
+    visualizations:
+        - graphic: http://placehold.it/350x350
+          title: Visualization Title
+          description: Optional visualization description
     content: |
             Here is some content from subsection "Business Retention & Redevelopment"
 
   - title: Green Market Development
     description: Increase overall market demand for products and services that protect the environment.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-02.png
-    graphic: http://placehold.it/350x350
+    visualizations:
+        - graphic: http://placehold.it/350x350
+          title: Visualization Title
+          description: Optional visualization description
     content: |
             Here is some content from subsection "Green Market Development"
 
   - title: Local Economy
     description: Create an increasingly self-reliant community through a robust local economy with benefits shared by all.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-03.png
-    graphic: http://placehold.it/350x350
+    visualizations:
+        - graphic: http://placehold.it/350x350
+          title: Visualization Title
+          description: Optional visualization description
     content: |
             Here is some content from subsection "Local Economy"
 
   - title: Quality Jobs & Living Wages
     description: Expand job opportunities that support upward economic mobility and provide sufficient wages so that working people and their families can afford a decent standard of living.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-04.png
-    graphic: http://placehold.it/350x350
+    visualizations:
+        - graphic: http://placehold.it/350x350
+          title: Visualization Title
+          description: Optional visualization description
     content: |
             Austin was asked to provide details on 12 areas related to our Quality Jobs and Living Wages. One of these areas has to do with household income.
 
@@ -47,14 +59,20 @@ subsections:
   - title: Targeted Industry Development
     description: Increase local competitiveness by strengthening networks of businesses, suppliers, and associated institutions.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-05.png
-    graphic: http://placehold.it/350x350
+    visualizations:
+        - graphic: http://placehold.it/350x350
+          title: Visualization Title
+          description: Optional visualization description
     content: |
             Here is some content from subsection "Targeted Industry Development"
 
   - title: Workforce Readiness
     description: Prepare the workforce for successful employment through increasing attainment of post-secondary education and improving outcomes of workforce development programs.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-06.png
-    graphic: http://placehold.it/350x350
+    visualizations:
+        - graphic: http://placehold.it/350x350
+          title: Visualization Title
+          description: Optional visualization description
     content: |
             Here is some content from subsection "Workforce Readiness"
 
