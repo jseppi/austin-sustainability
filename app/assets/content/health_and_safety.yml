@@ -37,7 +37,7 @@ subsections:
     description: Ensure that adults and children of all income levels have opportunities to lean about nutritious eating and have physical and economic access to fresh, healthful food and water.
     star: content/stars/health_and_safety/identity_05-04_health-safety-2-04.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/health-safety_01-03.png
           title: Visualization Title
           description: Optional visualization description
     content: |

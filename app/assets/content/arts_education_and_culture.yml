@@ -7,7 +7,7 @@ subsections:
     description: Provide a broad range of arts and cultural resources and activities that encourage participation and create self-expression.
     star: content/stars/arts_education_and_culture/identity_05-05_arts-culture-education-01.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/arts-culture_02-02.png
           title: Visualization Title
           description: Optional visualization description
     content: |

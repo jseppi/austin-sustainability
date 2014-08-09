@@ -37,7 +37,7 @@ subsections:
     description: Expand job opportunities that support upward economic mobility and provide sufficient wages so that working people and their families can afford a decent standard of living.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-04.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/economy-jobs_02-02.png
           title: Visualization Title
           description: Optional visualization description
     content: |

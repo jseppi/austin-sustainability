@@ -7,7 +7,7 @@ subsections:
     description: Design and maintain a network of green infrastructure features that integrate with the built environment to conserve ecosystem functions and provide associated benefits to human populations.
     star: content/stars/natural_systems/identity_05-02_natural-systems-01.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/natural-systems_01-02.png
           title: Visualization Title
           description: Optional visualization description
     content: |

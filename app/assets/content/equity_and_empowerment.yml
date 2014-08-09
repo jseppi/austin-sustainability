@@ -7,7 +7,7 @@ subsections:
     description: Citizens and residents improve community well-being by participating in local decision-making and volunteering with community organizations.
     star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-01.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/equity-empowerment-05.png
           title: Visualization Title
           description: Optional visualization description
     content: |

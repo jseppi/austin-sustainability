@@ -57,8 +57,14 @@ subsections:
     description: Create a network of well-used and enjoyable parks and public spaces that feature equitable, convenient access for residents throughout the community.
     star: content/stars/built_environment/identity_05-07_built-environment-2-06.png
     visualizations:
-        - graphic: http://placehold.it/350x350
-          title: Visualization Title
+        - graphic: content/visualizations/public-spaces_01.png
+          title: Accessibility to Austin's Public Space
+          description: Optional visualization description
+        - graphic: content/visualizations/public-spaces_02.png
+          title: Accessibility to Austin's Public Space
+          description: Optional visualization description
+        - graphic: content/visualizations/public-spaces_03.png
+          title: Accessibility to Austin's Public Space
           description: Optional visualization description
     content: |
             #### Park Access
