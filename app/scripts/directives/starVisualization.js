@@ -58,7 +58,7 @@ App.
           "<h4 class='vis-title' ng-if='vis.title'>{{vis.title}}</h4>" +
           "<div class='vis-description' ng-if='vis.description'>{{vis.description}}</div>" +
           "<div class='vis-graphic-container'>" +
-            "<img ng-src='{{vis.graphic}}'/>" +
+            "<img ng-src='{{vis.graphic}}' alt='Visualization' />" +
           "</div>" +
         "</div>",
       link: function (scope, element, attrs, ctrl) {

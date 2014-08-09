@@ -1,6 +1,6 @@
 'use strict';
 
-App.controller('SectionCtrl', function ($scope, $state, $filter, $stateParams, sections) {
+App.controller('SectionCtrl', function ($scope, $rootScope, $state, $filter, $stateParams, sections) {
 
   function goToDefaultSubsection () {
     $scope.selectedSubsection = _.first($scope.subsections);
@@ -34,6 +34,8 @@ App.controller('SectionCtrl', function ($scope, $state, $filter, $stateParams, s
     if (!$scope.selectedSubsection) {
       goToDefaultSubsection();
     }
-
   }
+
+  $rootScope.pageTitle = $scope.section.title + " - " + $scope.selectedSubsection.title;
+
 });

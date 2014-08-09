@@ -1,13 +1,14 @@
 'use strict';
 
 App.controller('HomeCtrl',
-  function ($scope, $state, home, sections, HOME_STAR) {
+  function ($scope, $rootScope, $state, home, sections, HOME_STAR) {
+
+    $rootScope.pageTitle = "Home";
 
     $scope.homeContent = home;
     $scope.sections = sections;
     $scope.expandedSection = null;
     $scope.starPath = HOME_STAR;
-
     
     $scope.expandSection = function (section) {
       if ($scope.expandedSection === section) {
