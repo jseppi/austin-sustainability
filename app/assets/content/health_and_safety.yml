@@ -7,7 +7,7 @@ subsections:
     description: Enable adults and kids to maintain healthy, active lifestyles by integrating physical activity into their daily routines.
     star: content/stars/health_and_safety/identity_05-04_health-safety-2-01.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -17,7 +17,7 @@ subsections:
     description: Achieve positive health outcomes and minimize health risk factors through a high quality local health system that is accessible and responsive to community needs.
     star: content/stars/health_and_safety/identity_05-04_health-safety-2-02.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -27,7 +27,7 @@ subsections:
     description: Reduce harm to humans and property by utilizing long-term preventative and collaborative approaches to avoid emergency incidents and minimize their impacts.
     star: content/stars/health_and_safety/identity_05-04_health-safety-2-03.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -57,7 +57,7 @@ subsections:
     description: Ensure that indoor air quality is healthy for all people.
     star: content/stars/health_and_safety/identity_05-04_health-safety-2-05.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -67,7 +67,7 @@ subsections:
     description: Reduce vulnerability to all hazards, secure critical infrastructure, and ensure that communities are prepared to effectively respond to and recover from crisis.
     star: content/stars/health_and_safety/identity_05-04_health-safety-2-06.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -77,7 +77,7 @@ subsections:
     description: Prevent and reduce violent crime and increase perceptions of safety through interagency collaboration with residents as empowered partners.
     star: content/stars/health_and_safety/identity_05-04_health-safety-2-07.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |

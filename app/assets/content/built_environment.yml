@@ -7,7 +7,7 @@ subsections:
     description: Minimize and manage ambient noise and light levels to protect public health and integrity of ecological systems.
     star: content/stars/built_environment/identity_05-07_built-environment-2-01.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -17,7 +17,7 @@ subsections:
     description: Provide a clean and secure water supply for all local users through the management of potable water, wastewater, stormwater, and other piped infrastructure.
     star: content/stars/built_environment/identity_05-07_built-environment-2-02.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -27,7 +27,7 @@ subsections:
     description: Concentrate development in compact, human-scaled, walkable centers and neighborhoods that connect to transit, offer diverse uses and services, and provide housing options for families of all income.
     star: content/stars/built_environment/identity_05-07_built-environment-2-03.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -37,7 +37,7 @@ subsections:
     description: Construct, preserve, and maintain an adequate and diverse supply of location-efficient and affordable housing options for all residents.
     star: content/stars/built_environment/identity_05-07_built-environment-2-04.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -47,7 +47,7 @@ subsections:
     description: Focus new growth in infill areas and on development that does not require the extension of water, sewer, and road infrastructure or facilitate sprawl.
     star: content/stars/built_environment/identity_05-07_built-environment-2-05.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -85,7 +85,7 @@ subsections:
     description: Promote diverse transportation modes, including walking, bicycling, and transit, that are safe, low-cost, and reduce vehicle miles traveled.
     star: content/stars/built_environment/identity_05-07_built-environment-2-07.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |

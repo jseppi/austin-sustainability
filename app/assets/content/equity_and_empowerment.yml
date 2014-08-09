@@ -25,7 +25,7 @@ subsections:
     description: Promote the full enjoyment of civil and human rights for all residents in the community.
     star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-02.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -35,7 +35,7 @@ subsections:
     description: Reduce polluted and toxic environments with an emphasis on alleviating disproportionate health hazards in areas where low-income residents and persons of color live.
     star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-03.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -45,7 +45,7 @@ subsections:
     description: Ensure equitable access to foundational community assets with and between neighborhoods and populations.
     star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-04.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -55,7 +55,7 @@ subsections:
     description: Ensure high quality human services programs are available and utilized to guarantee basic human needs so that all residents lead lives of dignity.
     star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-05.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -65,7 +65,7 @@ subsections:
     description: Prevent people from falling into poverty and proactively enable those who are living in poverty to obtain greater lasting economic stability and security.
     star: content/stars/equity_and_empowerment/identity_05-03_equity-empowerment-06.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |

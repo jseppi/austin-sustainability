@@ -7,7 +7,7 @@ subsections:
     description: Foster economic prosperity and stability by retaining and expanding businesses with support from the business community.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-01.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -17,7 +17,7 @@ subsections:
     description: Increase overall market demand for products and services that protect the environment.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-02.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -27,7 +27,7 @@ subsections:
     description: Create an increasingly self-reliant community through a robust local economy with benefits shared by all.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-03.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -60,7 +60,7 @@ subsections:
     description: Increase local competitiveness by strengthening networks of businesses, suppliers, and associated institutions.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-05.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -70,7 +70,7 @@ subsections:
     description: Prepare the workforce for successful employment through increasing attainment of post-secondary education and improving outcomes of workforce development programs.
     star: content/stars/economy_and_jobs/identity_05-06_economy-jobs-06.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |

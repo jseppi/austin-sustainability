@@ -27,7 +27,7 @@ subsections:
     description: Ensure a cohesive, connected community through adequate venues for community interaction, community building activities and events, and the sharing of information about community issues and services.
     star: content/stars/arts_education_and_culture/identity_05-05_arts-culture-education-02.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -37,7 +37,7 @@ subsections:
     description: Achieve equitable attainment of a quality education for individuals from birth to adulthood.
     star: content/stars/arts_education_and_culture/identity_05-05_arts-culture-education-03.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -47,7 +47,7 @@ subsections:
     description: Preserve and reuse historic structures and sites to retain local, regional, and national history and heritage, reinforce community character, and conserve resources.
     star: content/stars/arts_education_and_culture/identity_05-05_arts-culture-education-04.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -57,7 +57,7 @@ subsections:
     description: Celebrate and respect diversity and represent diverse perspectives in community decision-making.
     star: content/stars/arts_education_and_culture/identity_05-05_arts-culture-education-05.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |

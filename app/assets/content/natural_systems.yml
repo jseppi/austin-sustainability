@@ -29,7 +29,7 @@ subsections:
     description: Prevent and manage invasive species in order to restore and protect natural ecosystems and the benefits they provide.
     star: content/stars/natural_systems/identity_05-02_natural-systems-02.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -39,7 +39,7 @@ subsections:
     description: Protect, enhance, and restore natural ecosystems and cultural landscapes to confer resilience and support clean water and air, food supply, and public safety.
     star: content/stars/natural_systems/identity_05-02_natural-systems-03.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -49,7 +49,7 @@ subsections:
     description: Ensure that outdoor air quality is healthy for all people and protects the welfare of the community.
     star: content/stars/natural_systems/identity_05-02_natural-systems-04.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -59,7 +59,7 @@ subsections:
     description: Protect and restore the biological, chemical, and hydrological integrity of water in the natural environment.
     star: content/stars/natural_systems/identity_05-02_natural-systems-05.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -69,7 +69,7 @@ subsections:
     description: Conserve and maintain lands that provide raw materials in ways that allow for sustained harvests and preserve ecosystem integrity.
     star: content/stars/natural_systems/identity_05-02_natural-systems-06.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |

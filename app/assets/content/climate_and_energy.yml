@@ -7,7 +7,7 @@ subsections:
     description: Strengthen the resilience of communities to climate change impacts on built, natural, economic, and social systems.
     star: content/stars/climate_and_energy/identity_05-01_climate-energy-2-01.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -17,7 +17,7 @@ subsections:
     description: Achieve greenhouse gas emissions reductions throughout the community.
     star: content/stars/climate_and_energy/identity_05-01_climate-energy-2-02.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -27,7 +27,7 @@ subsections:
     description: Transition the local energy supply for both transportation and non-mobile sources toward the use of renewable, less carbon intensive, and less toxic alternatives.
     star: content/stars/climate_and_energy/identity_05-01_climate-energy-2-03.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -37,7 +37,7 @@ subsections:
     description: Minimize resource use and demand in the industrial sector as a means to mitigate greenhouse gas emissions and conserve water.
     star: content/stars/climate_and_energy/identity_05-01_climate-energy-2-04.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -47,7 +47,7 @@ subsections:
     description: Improve the energy and water efficiency of the community's residential, commercial, and institutional building stock.
     star: content/stars/climate_and_energy/identity_05-01_climate-energy-2-05.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
@@ -57,7 +57,7 @@ subsections:
     description: Minimize resource use and demand in local public infrastructure as a means to mitigate greenhouse gas emissions and conserve water.
     star: content/stars/climate_and_energy/identity_05-01_climate-energy-2-06.png
     visualizations:
-        - graphic: http://placehold.it/350x350
+        - graphic: content/visualizations/placeholder350x350.gif
           title: Visualization Title
           description: Optional visualization description
     content: |
