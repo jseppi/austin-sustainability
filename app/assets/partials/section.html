@@ -8,8 +8,8 @@
   <div class="row">
     <nav class="section-nav" role="navigation">
       <ul>
-        <li ng-repeat="ss in subsections" ng-class="{'active': selectedSubsection == ss}">
-          <a href="" ng-click="selectSubsection(ss)">
+        <li ng-repeat="ss in subsections" ng-class="{'active': selectedSubsection === ss}">
+          <a ui-sref="{{sectionName}}({subsection: '{{ss.title | slugify}}'})" ui-sref-opts="{location: 'replace', reload: false}">
             {{ss.title}}
           </a>
         </li>
@@ -17,12 +17,12 @@
     </nav>
   </div>
   <div class="row">
-    <div class="subsection-description" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
-      <p>{{ss.description}}</p>
+    <div class="subsection-description">
+      <p>{{selectedSubsection.description}}</p>
     </div>
   </div>
   <div class="row">
-    <div class="subsection-star-container">
+    <div class="subsection-star-container animated fadeIn">
       <img ng-src="{{selectedSubsection.star}}" alt="{{selectedSubsection.title}}" class="subsection-star"/>
     </div>
   </div>
@@ -33,18 +33,16 @@
 
 </div>
 <div class="col-xs-12 col-sm-6 col-md-9 section-content content">
-  <div class="subsection" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
+  <div class="subsection animated fadeIn">
     <div class="row">
-      <h3>{{ss.title}}</h3>
+      <h3>{{selectedSubsection.title}}</h3>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-7">
-        <div class="subsection-content" star-markdown="ss.content"></div>
+      <div class="col-xs-12 col-md-4">
+        <div class="subsection-content" star-markdown="selectedSubsection.content"></div>
       </div>
-      <div class="col-xs-12 col-md-5">
-        <div class="subsection-graphic">
-          <img ng-src="{{ss.graphic}}"/>
-        </div>
+      <div class="col-xs-12 col-md-7 col-md-push-1">
+        <div star-visualization="selectedSubsection.visualizations" class="subsection-visualizations"></div>
       </div>
     </div>
   </div>
