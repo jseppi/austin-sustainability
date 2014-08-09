@@ -26,9 +26,8 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     //Create state for each main section based on slugs
     //TODO: subsection routes using slugify() on subsection titles
     _.each(SECTIONS, function (section) {
-      console.log(section);
       $stateProvider.state(section, {
-        url: '/' + section + '/:subsection',
+        url: '/' + section + '/:subsection/',
         templateUrl: 'partials/section.html',
         controller: 'SectionCtrl',
         resolve: {

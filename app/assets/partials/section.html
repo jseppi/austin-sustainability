@@ -8,8 +8,8 @@
   <div class="row">
     <nav class="section-nav" role="navigation">
       <ul>
-        <li ng-repeat="ss in subsections" ng-class="{'active': selectedSubsection == ss}">
-          <a href="" ng-click="selectSubsection(ss)">
+        <li ng-repeat="ss in subsections" ng-class="{'active': selectedSubsection === ss}">
+          <a ui-sref="{{sectionName}}({subsection: '{{ss.title | slugify}}'})" ui-sref-opts="{location: 'replace', reload: false}">
             {{ss.title}}
           </a>
         </li>
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="subsection-star-container">
+    <div class="subsection-star-container animated fadeIn">
       <img ng-src="{{selectedSubsection.star}}" alt="{{selectedSubsection.title}}" class="subsection-star"/>
     </div>
   </div>
@@ -33,7 +33,7 @@
 
 </div>
 <div class="col-xs-12 col-sm-6 col-md-9 section-content content">
-  <div class="subsection" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
+  <div class="subsection animated fadeIn" ng-repeat="ss in subsections" ng-show="selectedSubsection == ss">
     <div class="row">
       <h3>{{ss.title}}</h3>
     </div>
