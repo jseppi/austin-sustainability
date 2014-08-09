@@ -5,15 +5,6 @@ var App = angular.module('app', [
   'ngAnimate', 'ngSanitize', 'ngTouch', 'ui.router'
 ]);
 
-// function slugify(text) {
-//   return text.toString().toLowerCase()
-//     .replace(/\s+/g, '-')           // Replace spaces with -
-//     .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
-//     .replace(/\-\-+/g, '-')         // Replace multiple - with single -
-//     .replace(/^-+/, '')             // Trim - from start of text
-//     .replace(/-+$/, '');            // Trim - from end of text
-// }
-
 
 App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
   $stateProvider
@@ -35,8 +26,9 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     //Create state for each main section based on slugs
     //TODO: subsection routes using slugify() on subsection titles
     _.each(SECTIONS, function (section) {
+      console.log(section);
       $stateProvider.state(section, {
-        url: '/' + section,
+        url: '/' + section + '/:subsection',
         templateUrl: 'partials/section.html',
         controller: 'SectionCtrl',
         resolve: {
