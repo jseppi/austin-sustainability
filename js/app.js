@@ -24,9 +24,10 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
 
 
     //Create state for each main section based on slugs
+    //TODO: subsection routes using slugify() on subsection titles
     _.each(SECTIONS, function (section) {
       $stateProvider.state(section, {
-        url: '/' + section,
+        url: '/' + section + '/:subsection/',
         templateUrl: 'partials/section.html',
         controller: 'SectionCtrl',
         resolve: {
@@ -66,7 +67,7 @@ App
   .controller('AppCtrl', function ($scope, $state) {
     $scope.sectionClass = 'home';
 
-    $scope.$on('$stateChangeSuccess', function() {
+    $scope.$on('$stateChangeSuccess', function () {
       $scope.sectionClass = $state.current.name;
     });
   });
@@ -74,13 +75,14 @@ App
 'use strict';
 
 App.controller('HomeCtrl',
-  function ($scope, $state, home, sections, HOME_STAR) {
+  function ($scope, $rootScope, $state, home, sections, HOME_STAR) {
+
+    $rootScope.pageTitle = "Home";
 
     $scope.homeContent = home;
     $scope.sections = sections;
     $scope.expandedSection = null;
     $scope.starPath = HOME_STAR;
-
     
     $scope.expandSection = function (section) {
       if ($scope.expandedSection === section) {
@@ -98,22 +100,43 @@ App.controller('HomeCtrl',
 
 'use strict';
 
-App.controller('SectionCtrl', function ($scope, $state, sections) {
+App.controller('SectionCtrl', function ($scope, $rootScope, $state, $filter, $stateParams, sections) {
+
+  function goToDefaultSubsection () {
+    $scope.selectedSubsection = _.first($scope.subsections);
+    $state.go($state.current.name, {subsection: slugify($scope.selectedSubsection.title)});
+  }
+
+  var slugify = $filter('slugify');
   
   var currentSection = _.find(sections, function (s) {
     return s.key === $state.current.name; }
   );
 
+  $scope.sectionName = $state.current.name;
   $scope.section = currentSection.config;
   $scope.subsections = currentSection.config.subsections;
 
-  //default to selecting the first subsection 
-  $scope.selectedSubsection = _.first($scope.subsections);
+  //get the subsection from the stateParams
+  var subsectionParam = $stateParams.subsection;
 
+  if (!subsectionParam || !_.isString(subsectionParam)) {
+    //default to selecting the first subsection 
+    goToDefaultSubsection();
+  }
+  else {
+    //try to find the matching subsection
+    $scope.selectedSubsection = _.find($scope.subsections, function (ss) {
+      return subsectionParam.toLowerCase() === slugify(ss.title);
+    });
 
-  $scope.selectSubsection = function (ss) {
-    $scope.selectedSubsection = ss;
-  };
+    //if not found, just default to first subsection
+    if (!$scope.selectedSubsection) {
+      goToDefaultSubsection();
+    }
+  }
+
+  $rootScope.pageTitle = $scope.section.title + " - " + $scope.selectedSubsection.title;
 
 });
 
@@ -126,10 +149,10 @@ App.
         slides: '=starHomeSlider'
       },
       template: "" + 
-        "<div class='home-slider'>" +
-          "<ul class='slide-controls'>" + 
+        "<div class='home-slider swipable'>" +
+          "<ul class='swipe-controls'>" + 
             "<li ng-repeat='slide in slides' ng-class='{active: slide.isActive}'>" +
-              "<button type='button' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
+              "<button type='button' title='Click or swipe to see content' ng-click='makeActive(slide)'>{{$index + 1}}</button>" +
             "</li>" +
           "</ul>" +
           "<div ng-repeat='slide in slides' star-home-slider-content='slide'></div>" +
@@ -174,8 +197,8 @@ App.
       },
       template: "" +
         "<div ng-swipe-right='swipeRight(slide)' ng-swipe-left='swipeLeft(slide)' class='slide-content' ng-show='slide.isActive'>" +
-          "<p star-markdown='slide.content'></p>" +
-          "<img ng-src='{{slide.image}}'/>" +
+          "<div star-markdown='slide.content'></div>" +
+          "<img ng-src='{{slide.image}}' alt='Image for slide'/>" +
         "</div>",
       link: function (scope, element, attrs, ctrl) {
         scope.swipeRight = function (slide) {
@@ -215,6 +238,98 @@ App.
       }
     };
   });
+'use strict';
+App.
+  directive('starVisualization', function () {
+    return {
+      restrict: 'A',
+      scope: {
+        visualizations: '=starVisualization'
+      },
+      template: "" + 
+        "<div class='visualization-slider swipable'>" +
+          "<ul ng-if='visualizations.length > 1' class='swipe-controls'>" + 
+            "<li ng-repeat='vis in visualizations' ng-class='{active: vis.isActive}'>" +
+              "<button type='button' title='Click or swipe to see content' ng-click='makeActive(vis)'>{{$index + 1}}</button>" +
+            "</li>" +
+          "</ul>" +
+          "<div ng-repeat='vis in visualizations' star-visualization-content='vis'></div>" +
+        "</div>",
+      controller: function ($scope) {
+
+        var numVisualizations = $scope.visualizations.length;
+
+        this.nextVis = function (currVis) {
+          var currIndex = _.indexOf($scope.visualizations, currVis);
+          var nextIndex = (currIndex + 1) % numVisualizations;
+          $scope.visualizations[currIndex].isActive = false;
+          $scope.visualizations[nextIndex].isActive = true;
+        };
+
+        this.prevVis = function (currVis) {
+          var currIndex = _.indexOf($scope.visualizations, currVis);
+          var prevIndex = (currIndex - 1 < 0) ? numVisualizations - 1 : currIndex - 1;
+          $scope.visualizations[currIndex].isActive = false;
+          $scope.visualizations[prevIndex].isActive = true;
+        };
+      },
+      link: function (scope) {
+        var firstVis = _.first(scope.visualizations);
+        firstVis.isActive = true;
+
+        scope.makeActive = function (vis) {
+          var currActive = _.findWhere(scope.visualizations, {'isActive': true});
+          currActive.isActive = false;
+          vis.isActive = true;
+        };
+      }
+    };
+  })
+  .directive('starVisualizationContent', function () {
+    return {
+      restrict: 'A',
+      replace: true,
+      require: '^starVisualization',
+      scope: {
+        vis: '=starVisualizationContent'
+      },
+      template: "" +
+        "<div ng-swipe-right='swipeRight(vis)' ng-swipe-left='swipeLeft(vis)' class='vis-container' ng-show='vis.isActive'>" +
+          "<h4 class='vis-title' ng-if='vis.title'>{{vis.title}}</h4>" +
+          "<div class='vis-description' ng-if='vis.description'>{{vis.description}}</div>" +
+          "<div class='vis-graphic-container'>" +
+            "<img ng-src='{{vis.graphic}}' alt='Visualization' />" +
+          "</div>" +
+        "</div>",
+      link: function (scope, element, attrs, ctrl) {
+        scope.swipeRight = function (vis) {
+          ctrl.prevVis(vis);
+        };
+
+        scope.swipeLeft = function (vis) {
+          ctrl.nextVis(vis);
+        };
+      }
+    };
+  });
+'use strict';
+
+App.filter('slugify', function() {
+
+  function slugify(text) {
+    return text.toString().toLowerCase()
+      .replace(/\s+/g, '_')           // Replace spaces with _
+      .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+      .replace(/\-\-+/g, '_')         // Replace multiple _ with single _
+      .replace(/^_+/, '')             // Trim _ from start of text
+      .replace(/_+$/, '');            // Trim _ from end of text
+  }
+
+  return function(input) {
+    return input && _.isString(input) ? slugify(input) : ''; 
+  };
+
+});
 'use strict';
 
 App.factory('HomeService', function ($http, $q, CONTENT_PATH) {

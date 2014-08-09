@@ -19,7 +19,7 @@
     "title": "Austin STAR Sustainability App",
     "icon": "link.png",
     "toolbar": false,
-    "frame": true,
+    "frame": false,
     "position": "center",
     "width": 1024,
     "height": 768,
@@ -27,7 +27,7 @@
     "min_height": 768,
     "resizable": true,
     "always-on-top": false,
-    "fullscreen": false
+    "fullscreen": true
   },
   "dependencies": {
     "nedb": "~0.9.4"
