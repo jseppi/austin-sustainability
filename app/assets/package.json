@@ -1,6 +1,6 @@
 {
   "author": "Seppi & Wilson LLP",
-  "name": "STAR",
+  "name": "Austin STAR Sustainability",
   "description": "Austin STAR Sustainability",
   "version": "0.0.1",
   "homepage": "",
@@ -16,10 +16,10 @@
   "dom_storage_quota": 1024,
   "window": {
     "//": "screen settings",
-    "title": "my awesome app",
+    "title": "Austin STAR Sustainability App",
     "icon": "link.png",
-    "toolbar": true,
-    "frame": true,
+    "toolbar": false,
+    "frame": false,
     "position": "center",
     "width": 1024,
     "height": 768,
@@ -27,7 +27,7 @@
     "min_height": 768,
     "resizable": true,
     "always-on-top": false,
-    "fullscreen": false
+    "fullscreen": true
   },
   "dependencies": {
     "nedb": "~0.9.4"
