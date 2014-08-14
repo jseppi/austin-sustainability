@@ -27,7 +27,13 @@
             </div>
           </a>
 
-          <div class="hub-button" ng-click="closeKiosk()" ng-if="isNodeWebkit">
+          <a ui-sref="home" class="nav-button" ng-click="$state.go('home')" ng-if="sectionClass != 'home'">
+            <img class="home-icon" src="img/home-icon.png"  alt="Return to Home"/>
+            <span class="nav-text">
+              Return to Home
+            </span>
+          </a>
+          <div class="nav-button" ng-click="closeKiosk()" ng-if="isNodeWebkit && (sectionClass == 'home')">
             <img class="hub-icon" src="img/hub-icon.png"  alt="Return to Hub"/>
             <span class="nav-text">
               Return to Hub

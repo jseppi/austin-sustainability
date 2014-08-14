@@ -48,7 +48,7 @@
     @include transition(all 0.1s ease-in-out);
   }
 
-  .hub-button {
+  .nav-button {
     position: absolute;
     right: 0;
     top: 0;
@@ -68,12 +68,12 @@
 
   .hub-icon {
     height: 30px;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0px 2px 0px;
   }
 
   .home-icon {
-    margin: 5px 0px 5px 0px;
-    height: 40px;
+    margin: 6px 0px 4px 0px;
+    height: 32px;
   }
 
 }

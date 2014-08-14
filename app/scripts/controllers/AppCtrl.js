@@ -10,7 +10,7 @@ App
       if ($scope.isNodeWebkit) {
         var gui = require('nw.gui');
         var win = gui.Window.get();
-        win.zoomLevel = 2;
+        win.zoomLevel = win.width / 1000;
       }
     });
 
