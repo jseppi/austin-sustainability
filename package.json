@@ -11,7 +11,6 @@
   "scripts": {
     "compiler": "brunch build -P",
     "dev": "brunch watch --server",
-    "test": "karma start test/karma.conf.js",
     "app": "brunch build -P && nodewebkit _public",
     "deploy": "brunch build -P && grunt",
     "pages": "brunch build -P && grunt gh-pages"
