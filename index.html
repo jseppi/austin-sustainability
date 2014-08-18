@@ -21,12 +21,18 @@
         <header class="main-header" role="banner">
           <a ui-sref="home" ng-class="{'active': !sectionClass}" title="Return to Home">
             <div class="star-icon"></div>
-
             <div class="head-text">
               <h1>Austin Sustainability</h1>
               <h2>What Sustainability Looks Like</h2>
             </div>
           </a>
+
+          <div class="hub-button" ng-click="closeKiosk()" ng-if="isNodeWebkit">
+            <img class="hub-icon" src="img/hub-icon.png"  alt="Return to Hub"/>
+            <span class="nav-text">
+              Return to Hub
+            </span>
+          </div>
         </header>
       </div>
       <div class="row">
