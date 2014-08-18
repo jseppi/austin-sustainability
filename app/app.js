@@ -43,7 +43,20 @@ App.config(function ($stateProvider, $urlRouterProvider, SECTIONS) {
     return;
 });
 
-App.run(function (SectionService, HomeService) {
+App.run(function ($rootScope, SectionService, HomeService) {
+  //prefetch content
   SectionService.getSections();
   HomeService.getContent();
+
+  //set var to indicate if in node-webkit version
+  $rootScope.isNodeWebkit = (typeof process === "object") && process.versions['node-webkit'];
+  
+  //set zoomLevel if in node-webkit to account for scaling bug in 
+  // Windows 8 webkit on high DPI screens 
+  if ($rootScope.isNodeWebkit) {
+    var gui = require('nw.gui');
+    var win = gui.Window.get();
+    win.zoomLevel = 2;
+  }
+    
 });
