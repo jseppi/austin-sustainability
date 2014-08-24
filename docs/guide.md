@@ -19,13 +19,13 @@ The eight files are
 * `health_and_safety.yml` - Content for the Health and Safety section
 * `natural_systems.yml` - Content for the Natural Systems section
 
-The content files use a text-based file format called "YAML". Details about YAML can be found at [http://www.yaml.org/](http://www.yaml.org/) though a deep understanding is not required for modifying this application's content. You can edit the content files in any text-editor, though an advanced editor such as Notepad++ (freely available at [http://notepad-plus-plus.org/](http://notepad-plus-plus.org/)), is suggested because they typically provide convenient syntax highlighting.
+The content files use a text-based file format called "YAML". Details about YAML can be found at [http://www.yaml.org/](http://www.yaml.org/) though a deep understanding is not required for modifying the application's content. You can edit the content files in any text-editor, though an advanced editor such as Notepad++ (freely available at [http://notepad-plus-plus.org/](http://notepad-plus-plus.org/)), is suggested because they typically provide convenient syntax highlighting.
 
 ### Home Page Content
 
-The home page content file, `home.yml`, contains the 
+The home page content file, `home.yml`, is where the content for the "slides" on the application's home page is defined.
 
-![Home Slides](home_slides.png) 
+![Home Slides](img/home_slides.png) 
 
 ![Home Content](img/home_content.png)
 
