@@ -55,7 +55,38 @@ In this example, the "slides" property has a list as its value. Each item in the
 
 ### Markdown
 
-Some of the property values in the YAML content files of this application are in a special language called *Markdown*.
+Some of the property values in the YAML content files of this application are in a special language called *Markdown*. Full documentation for Markdown can be found at [http://daringfireball.net/projects/markdown/](http://daringfireball.net/projects/markdown/).
+
+In the STAR Community application's YAML files, Markdown syntax is used anywhere you see a property name followed by a vertical pipe `|` symbol.
+
+Example:
+
+```
+content: |
+  Austin had to document progress in 10 areas related to waste minimization. One of these areas is related to Austin's goal for Zero Waste.
+
+  #### Sustainability Benchmark
+
+  Show progress toward achieving a 100% reduction by 2050 in total solid waste land-filled.
+
+  #### How Austin's Doing
+
+  Total solid waste disposed is on track to fall below 0 percent by 2050.
+
+  Between 2009 and 2013, the City of Austin reduced the amount of solid waste disposed of in landfills by nearly 20% by promoting recycling, reduction, reuse, repair, and redesign.
+
+  * List item 1
+  * List item 2
+  * List item 3
+
+  1. Ordered list item 1 
+  2. Ordered list item 2 
+  3. Ordered list item 3 
+```
+
+In this example, the lines marked with `####` are headers, while all the other lines are just plan paragraph text.
+
+The lines becoming with `*` become items in an unordered list, and the lines beginning with a number and a period become items in an ordered list.
 
 ### Home Page Content
 
