@@ -96,6 +96,8 @@ The home page content file, `home.yml`, is where the content for the "slides" on
 
 This content is stored in a YAML list called `slides` as shown in the image below. Each item in the `slides` list has an `image` property and a `content` property.
 
+There is also a property called `isComingSoon`. Setting `isComingSoon` to `true` will cause a large "Coming Soon" message to be displayed on the home page.
+ 
 ![Home Content](img/home_content.png)
 
 ### Section Content
