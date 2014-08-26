@@ -6,6 +6,7 @@ App.controller('HomeCtrl',
     $rootScope.pageTitle = "Home";
 
     $scope.homeContent = home;
+    $scope.isComingSoon = home.isComingSoon;
     $scope.sections = sections;
     $scope.expandedSection = null;
     $scope.starPath = HOME_STAR;

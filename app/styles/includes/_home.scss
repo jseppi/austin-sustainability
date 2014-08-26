@@ -1,4 +1,13 @@
 
+.main-coming-soon {
+  text-align: center;
+  
+  h2 { 
+    font-size: 60px;
+    padding: 20px;
+  }
+}
+
 .main-about {
   h1 {
     font-family: $sans-serif;
@@ -21,5 +30,9 @@
     margin-top: 32px;
     text-align: center;
     margin-bottom: 1em;
+  }
+
+  .main-coming-soon h2 {
+    font-size: 120px;
   }
 }
