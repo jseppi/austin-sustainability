@@ -31,7 +31,7 @@ For the YAML content files for this application there are only two basic terms t
 
 A *property* is indicated by its name, followed by a colon (`:`), and then its value. 
 
-Example: `title: Climate and Energy`. 
+Example: `title: Climate and Energy`
 
 In this example, "title" is the name of the property, and "Climate and Energy" is the value.
 
