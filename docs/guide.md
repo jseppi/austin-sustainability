@@ -84,7 +84,7 @@ content: |
   3. Ordered list item 3 
 ```
 
-In this example, the lines marked with `####` are headers, while all the other lines are just plan paragraph text.
+In this example, the lines marked with `####` are headers, while all the other lines are just plain paragraph text.
 
 The lines becoming with `*` become items in an unordered list, and the lines beginning with a number and a period become items in an ordered list.
 
