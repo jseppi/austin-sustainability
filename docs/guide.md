@@ -82,11 +82,13 @@ content: |
   1. Ordered list item 1 
   2. Ordered list item 2 
   3. Ordered list item 3 
-```
+``` 
 
-In this example, the lines marked with `####` are headers, while all the other lines are just plain paragraph text.
+In this example, the lines marked with `####` are headers.
 
 The lines becoming with `*` become items in an unordered list, and the lines beginning with a number and a period become items in an ordered list.
+
+All the other lines are just plain paragraph text.
 
 ### Home Page Content
 
@@ -97,11 +99,33 @@ The home page content file, `home.yml`, is where the content for the "slides" on
 This content is stored in a YAML list called `slides` as shown in the image below. Each item in the `slides` list has an `image` property and a `content` property.
 
 There is also a property called `isComingSoon`. Setting `isComingSoon` to `true` will cause a large "Coming Soon" message to be displayed on the home page.
- 
+
 ![Home Content](img/home_content.png)
 
 ### Section Content
 
-All of the seven content section pages follow the same general format.
+All of the seven content section configuration files follow the same general format.
 
 ![Section Content Example](img/section_content_example.png)
+
+The first three properties, `title`, `description`, and `star`, are used to configure the text and star image for each section on the Home page navigation menu, as shown in the graphic below.
+
+![](img/section_home.png)
+
+The `lead` property is for the text preceding the subsection navigation on each section's page.
+
+![](img/section_lead.png)
+
+The `subsections` property is a list that contains the configuration properties for each of the individual subsections within a section. All of the items in the `subsections` list have the same configuration properties.
+
+The `title`, `description`, and `star` properties of a subsection item are shown in the graphic below:
+
+![](img/subsection_nav.png)
+
+The `content` property is a special Markdown property (see "Markdown" in the Introduction above) for the main content of each subsection.
+
+![](img/subsection_content.png)
+
+Lastly, the `visualizations` property is a list of visualizations for each subsection. Each item in the `visualizations` list contains `graphic`, `title`, and `description` properties. Note that the list may contain just one item. 
+
+![](img/subsection_vis.png)
