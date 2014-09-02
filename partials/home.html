@@ -1,37 +1,43 @@
-
-<div class="col-xs-12 col-sm-6 col-md-3 main-about about">
-  <h1>
-    Austin Sustainability
-  </h1>
-  <div star-home-slider="homeContent.slides"></div>
+<div ng-if="isComingSoon" class="main-coming-soon">
+  <h2>Coming Soon!</h2>
+  <img ng-src="{{starPath}}" class="main-star" alt="Star Image" />
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-9 main-content content">
-  <div class="row">
-    <div class="col-xs-12 col-md-4">
-      <nav class="main-nav" role="navigation">
-        <ul>
-          <li ng-repeat="section in sections" class="{{ section.key }}" ng-class="{'selected': expandedSection === section}">
-            <h3 class="section-title">
-              <a href="" ng-click="expandSection(section)">
-                {{section.config.title}}
-              </a>
-            </h3>
-            <div class="section-description">
-              <p>{{section.config.description}}</p>
-              <p class="text-center">
-                <a class="btn btn btn-explore" ui-sref="{{section.key}}" ng-hide="section !== expandedSection">
-                  Explore
+<div ng-if="!isComingSoon">
+  <div class="col-xs-12 col-sm-6 col-md-3 main-about about">
+    <h1>
+      Austin Sustainability
+    </h1>
+    <div star-home-slider="homeContent.slides"></div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-9 main-content content">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <nav class="main-nav" role="navigation">
+          <ul>
+            <li ng-repeat="section in sections" class="{{ section.key }}" ng-class="{'selected': expandedSection === section}">
+              <h3 class="section-title">
+                <a href="" ng-click="expandSection(section)">
+                  {{section.config.title}}
                 </a>
-              </p>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-12 col-md-8">
-      <div class="main-star-container">
-        <img ng-src="{{starPath}}" class="main-star" alt="Star Image" />
+              </h3>
+              <div class="section-description">
+                <p>{{section.config.description}}</p>
+                <p class="text-center">
+                  <a class="btn btn btn-explore" ui-sref="{{section.key}}" ng-hide="section !== expandedSection">
+                    Explore
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <div class="main-star-container">
+          <img ng-src="{{starPath}}" class="main-star" alt="Star Image" />
+        </div>
       </div>
     </div>
   </div>
