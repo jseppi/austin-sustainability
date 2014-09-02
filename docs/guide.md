@@ -110,22 +110,22 @@ All of the seven content section configuration files follow the same general for
 
 The first three properties, `title`, `description`, and `star`, are used to configure the text and star image for each section on the Home page navigation menu, as shown in the graphic below.
 
-![](img/section_home.png)
+![Section Nav Properties](img/section_home.png)
 
 The `lead` property is for the text preceding the subsection navigation on each section's page.
 
-![](img/section_lead.png)
+![Section Lead](img/section_lead.png)
 
 The `subsections` property is a list that contains the configuration properties for each of the individual subsections within a section. All of the items in the `subsections` list have the same configuration properties.
 
 The `title`, `description`, and `star` properties of a subsection item are shown in the graphic below:
 
-![](img/subsection_nav.png)
+![Subsection Nav Properties](img/subsection_nav.png)
 
 The `content` property is a special Markdown property (see "Markdown" in the Introduction above) for the main content of each subsection.
 
-![](img/subsection_content.png)
+![Subsection Content](img/subsection_content.png)
 
 Lastly, the `visualizations` property is a list of visualizations for each subsection. Each item in the `visualizations` list contains `graphic`, `title`, and `description` properties. Note that the list may contain just one item. 
 
-![](img/subsection_vis.png)
+![Subsection Visualizations](img/subsection_vis.png)
